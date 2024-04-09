@@ -561,3 +561,11 @@ C:\Users\win11\Documents\Projeler\web - dershane\web\obj\Debug\net8.0\refint\web
 C:\Users\win11\Documents\Projeler\web - dershane\web\obj\Debug\net8.0\web.pdb
 C:\Users\win11\Documents\Projeler\web - dershane\web\obj\Debug\net8.0\web.genruntimeconfig.cache
 C:\Users\win11\Documents\Projeler\web - dershane\web\obj\Debug\net8.0\ref\web.dll
+C:\Users\win11\Documents\Projeler\web - dershane\web\bin\Debug\net8.0\business.dll
+C:\Users\win11\Documents\Projeler\web - dershane\web\bin\Debug\net8.0\data.dll
+C:\Users\win11\Documents\Projeler\web - dershane\web\bin\Debug\net8.0\dto.dll
+C:\Users\win11\Documents\Projeler\web - dershane\web\bin\Debug\net8.0\entity.dll
+C:\Users\win11\Documents\Projeler\web - dershane\web\bin\Debug\net8.0\business.pdb
+C:\Users\win11\Documents\Projeler\web - dershane\web\bin\Debug\net8.0\data.pdb
+C:\Users\win11\Documents\Projeler\web - dershane\web\bin\Debug\net8.0\dto.pdb
+C:\Users\win11\Documents\Projeler\web - dershane\web\bin\Debug\net8.0\entity.pdb

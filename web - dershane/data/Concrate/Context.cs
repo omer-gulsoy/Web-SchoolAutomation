@@ -13,7 +13,7 @@ namespace data.Concrate
 	{
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer("server=ELITEBOOK\\MSSQLSERVER2012;database=DershaneDB;integrated security=true");
+			optionsBuilder.UseSqlServer("server=ELITEBOOK\\MSSQLSERVER2012;database=DershaneDB;integrated security=true;TrustServerCertificate=True;");
 		}
 	}
 }

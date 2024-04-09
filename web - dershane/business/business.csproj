@@ -32,4 +32,8 @@
     <ProjectReference Include="..\entity\entity.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Concrate\" />
+  </ItemGroup>
+
 </Project>

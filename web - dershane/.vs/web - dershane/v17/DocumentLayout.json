@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{9B261E73-2C0B-4BDA-A8F0-E17529233967}|data\\data.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\data\\concrate\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B261E73-2C0B-4BDA-A8F0-E17529233967}|data\\data.csproj|solutionrelative:data\\concrate\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -23,19 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Context.cs",
-              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\data\\Concrate\\Context.cs",
-              "RelativeDocumentMoniker": "data\\Concrate\\Context.cs",
-              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\data\\Concrate\\Context.cs",
-              "RelativeToolTip": "data\\Concrate\\Context.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T14:55:51.839Z",
-              "EditorCaption": ""
             }
           ]
         }
