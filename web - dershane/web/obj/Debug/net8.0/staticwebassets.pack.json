@@ -661,6 +661,14 @@
       "PackagePath": "staticwebassets\\template\\layout2.html"
     },
     {
+      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\login.html",
+      "PackagePath": "staticwebassets\\template\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\register.html",
+      "PackagePath": "staticwebassets\\template\\register.html"
+    },
+    {
       "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\teacher-details.html",
       "PackagePath": "staticwebassets\\template\\teacher-details.html"
     },

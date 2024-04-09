@@ -9074,6 +9074,7 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.2",
       "business >= 1.0.0",
       "data >= 1.0.0",
+      "dto >= 1.0.0",
       "entity >= 1.0.0"
     ]
   },
@@ -9109,6 +9110,9 @@
             },
             "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\data\\data.csproj": {
               "projectPath": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\data\\data.csproj"
+            },
+            "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\dto\\dto.csproj": {
+              "projectPath": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\dto\\dto.csproj"
             },
             "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\entity\\entity.csproj": {
               "projectPath": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\entity\\entity.csproj"
