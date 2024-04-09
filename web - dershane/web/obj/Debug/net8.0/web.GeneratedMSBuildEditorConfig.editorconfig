@@ -30,12 +30,64 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Partials/_AboutPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHNcX0Fib3V0UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Partials/_BlogPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHNcX0Jsb2dQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Partials/_CoursePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHNcX0NvdXJzZVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Partials/_CtaPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHNcX0N0YVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Partials/_EventsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHNcX0V2ZW50c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Partials/_SliderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHNcX1NsaWRlclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Partials/_TakeTourePartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHNcX1Rha2VUb3VyZVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Partials/_TeacherPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHNcX1RlYWNoZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Partials/_TestimonialPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHNcX1Rlc3RpbW9uaWFsUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Shared/LayoutPartials/_FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFBhcnRpYWxzXF9Gb290ZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Shared/LayoutPartials/_HeaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFBhcnRpYWxzXF9IZWFkZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Shared/LayoutPartials/_HeadPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFBhcnRpYWxzXF9IZWFkUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Shared/LayoutPartials/_PreloaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFBhcnRpYWxzXF9QcmVsb2FkZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Shared/LayoutPartials/_ScriptPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFBhcnRpYWxzXF9TY3JpcHRQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Shared/_ValidationScriptsPartial.cshtml]

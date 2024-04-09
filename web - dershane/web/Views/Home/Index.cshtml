@@ -1,8 +1,12 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Ana Sayfa";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@await Html.PartialAsync("~/Views/Partials/_SliderPartial.cshtml")
+@await Html.PartialAsync("~/Views/Partials/_AboutPartial.cshtml")
+@await Html.PartialAsync("~/Views/Partials/_CoursePartial.cshtml")
+@await Html.PartialAsync("~/Views/Partials/_TakeTourePartial.cshtml")
+@await Html.PartialAsync("~/Views/Partials/_TeacherPartial.cshtml")
+@await Html.PartialAsync("~/Views/Partials/_TestimonialPartial.cshtml")
+@await Html.PartialAsync("~/Views/Partials/_BlogPartial.cshtml")
+@await Html.PartialAsync("~/Views/Partials/_CtaPartial.cshtml")
