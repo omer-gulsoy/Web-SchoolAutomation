@@ -35,8 +35,14 @@ Description: Responsive Education HTML5 Template
     ##== Default Css
 *=============================================*/
 
-#myDiv {
-    background: url(~/template/assets/images/bg/slider-bg1.jpg) center/cover no-repeat;
+#ohgSlide1 {
+    background: url(/template/assets/images/bg/slider-bg1.jpg) center/cover no-repeat;
+}
+#ohgSlide2 {
+    background: url(/template/assets/images/bg/slider-bg2.jpg) center/cover no-repeat;
+}
+#ohgSlide3 {
+    background: url(/template/assets/images/bg/slider-bg3.jpg) center/cover no-repeat;
 }
 
 

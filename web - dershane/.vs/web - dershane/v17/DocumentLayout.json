@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\views\\partials\\_teacherpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\views\\partials\\_teacherpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\views\\partials\\_taketourepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\views\\partials\\_taketourepartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\views\\partials\\_aboutpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\views\\partials\\_aboutpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9B261E73-2C0B-4BDA-A8F0-E17529233967}|data\\data.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\data\\concrate\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B261E73-2C0B-4BDA-A8F0-E17529233967}|data\\data.csproj|solutionrelative:data\\concrate\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,69 +23,18 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_TakeTourePartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Views\\Partials\\_TakeTourePartial.cshtml",
-              "RelativeDocumentMoniker": "web\\Views\\Partials\\_TakeTourePartial.cshtml",
-              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Views\\Partials\\_TakeTourePartial.cshtml",
-              "RelativeToolTip": "web\\Views\\Partials\\_TakeTourePartial.cshtml",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAwBEAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T14:26:26.041Z",
-              "EditorCaption": ""
             },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_AboutPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Views\\Partials\\_AboutPartial.cshtml",
-              "RelativeDocumentMoniker": "web\\Views\\Partials\\_AboutPartial.cshtml",
-              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Views\\Partials\\_AboutPartial.cshtml",
-              "RelativeToolTip": "web\\Views\\Partials\\_AboutPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T14:23:28.232Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_TeacherPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Views\\Partials\\_TeacherPartial.cshtml",
-              "RelativeDocumentMoniker": "web\\Views\\Partials\\_TeacherPartial.cshtml",
-              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Views\\Partials\\_TeacherPartial.cshtml",
-              "RelativeToolTip": "web\\Views\\Partials\\_TeacherPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T14:27:10.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "web\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "web\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T14:08:03.198Z",
+              "Title": "Context.cs",
+              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\data\\Concrate\\Context.cs",
+              "RelativeDocumentMoniker": "data\\Concrate\\Context.cs",
+              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\data\\Concrate\\Context.cs",
+              "RelativeToolTip": "data\\Concrate\\Context.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T14:55:51.839Z",
               "EditorCaption": ""
             }
           ]

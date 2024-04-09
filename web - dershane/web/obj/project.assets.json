@@ -3317,6 +3317,98 @@
             "rid": "win"
           }
         }
+      },
+      "business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FluentValidation": "11.9.0",
+          "FluentValidation.AspNetCore": "11.3.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.9.0",
+          "MailKit": "4.4.0",
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.0",
+          "data": "1.0.0",
+          "entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/business.dll": {}
+        }
+      },
+      "data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FluentValidation": "11.9.0",
+          "FluentValidation.AspNetCore": "11.3.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.9.0",
+          "MailKit": "4.4.0",
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.0",
+          "entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/data.dll": {}
+        }
+      },
+      "dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FluentValidation": "11.9.0",
+          "FluentValidation.AspNetCore": "11.3.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.9.0",
+          "MailKit": "4.4.0",
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.0",
+          "business": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/dto.dll": {}
+        }
+      },
+      "entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "FluentValidation": "11.9.0",
+          "FluentValidation.AspNetCore": "11.3.0",
+          "FluentValidation.DependencyInjectionExtensions": "11.9.0",
+          "MailKit": "4.4.0",
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "8.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.0"
+        },
+        "compile": {
+          "bin/placeholder/entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/entity.dll": {}
+        }
       }
     }
   },
@@ -8965,6 +9057,26 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "business/1.0.0": {
+      "type": "project",
+      "path": "../business/business.csproj",
+      "msbuildProject": "../business/business.csproj"
+    },
+    "data/1.0.0": {
+      "type": "project",
+      "path": "../data/data.csproj",
+      "msbuildProject": "../data/data.csproj"
+    },
+    "dto/1.0.0": {
+      "type": "project",
+      "path": "../dto/dto.csproj",
+      "msbuildProject": "../dto/dto.csproj"
+    },
+    "entity/1.0.0": {
+      "type": "project",
+      "path": "../entity/entity.csproj",
+      "msbuildProject": "../entity/entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8980,7 +9092,11 @@
       "Microsoft.EntityFrameworkCore.Design >= 8.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.2"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.2",
+      "business >= 1.0.0",
+      "data >= 1.0.0",
+      "dto >= 1.0.0",
+      "entity >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -9009,7 +9125,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\business\\business.csproj": {
+              "projectPath": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\business\\business.csproj"
+            },
+            "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\data\\data.csproj": {
+              "projectPath": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\data\\data.csproj"
+            },
+            "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\dto\\dto.csproj": {
+              "projectPath": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\dto\\dto.csproj"
+            },
+            "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\entity\\entity.csproj": {
+              "projectPath": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\entity\\entity.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
