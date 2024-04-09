@@ -15,5 +15,6 @@ namespace data.Concrate
 		{
 			optionsBuilder.UseSqlServer("server=ELITEBOOK\\MSSQLSERVER2012;database=DershaneDB;integrated security=true;TrustServerCertificate=True;");
 		}
+        public DbSet<Contact>? Contacts { get; set; }
 	}
 }

@@ -1,8 +1,7 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+﻿@{
+	ViewData["Title"] = "İletişim";
+	Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @await Html.PartialAsync("~/Views/Partials/_ContactCrumbsPartial.cshtml")
-<h1>Index</h1>
-
+@await Html.PartialAsync("~/Views/Partials/_ContactInfoPartial.cshtml")
+@await Html.PartialAsync("~/Views/Partials/_ContactFormPartial.cshtml")

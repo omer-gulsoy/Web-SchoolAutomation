@@ -38,9 +38,11 @@ Description: Responsive Education HTML5 Template
 #ohgSlide1 {
     background: url(/template/assets/images/bg/slider-bg1.jpg) center/cover no-repeat;
 }
+
 #ohgSlide2 {
     background: url(/template/assets/images/bg/slider-bg2.jpg) center/cover no-repeat;
 }
+
 #ohgSlide3 {
     background: url(/template/assets/images/bg/slider-bg3.jpg) center/cover no-repeat;
 }
@@ -894,11 +896,11 @@ img.title-top-shape {
 }
 
 .sec-style-two h2 {
-    color: #fff;
+    color: black;
 }
 
 .sec-style-two > span {
-    color: #fff;
+    color: black;
 }
 
 .video-area {
