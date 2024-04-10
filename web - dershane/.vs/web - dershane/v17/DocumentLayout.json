@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\views\\contact\\thanks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\views\\contact\\thanks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\views\\partials\\_thankspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\views\\partials\\_thankspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,27 +31,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Thanks.cshtml",
-              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Views\\Contact\\Thanks.cshtml",
-              "RelativeDocumentMoniker": "web\\Views\\Contact\\Thanks.cshtml",
-              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Views\\Contact\\Thanks.cshtml",
-              "RelativeToolTip": "web\\Views\\Contact\\Thanks.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "web\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T18:54:19.882Z",
+              "WhenOpened": "2024-04-10T23:14:31.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_ThanksPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Views\\Partials\\_ThanksPartial.cshtml",
-              "RelativeDocumentMoniker": "web\\Views\\Partials\\_ThanksPartial.cshtml",
-              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Views\\Partials\\_ThanksPartial.cshtml",
-              "RelativeToolTip": "web\\Views\\Partials\\_ThanksPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-09T18:52:17.641Z",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "web\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T22:07:14.905Z",
               "EditorCaption": ""
             }
           ]
