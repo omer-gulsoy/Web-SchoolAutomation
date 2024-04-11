@@ -18,9 +18,9 @@ namespace entity.Concrate
 		public int Phone { get; set; }
 		public string? Mail { get; set; }
 		public bool Status { get; set; }
-		public List<Student_Lesson>? Student_Lessons { get; set; }
 		[ForeignKey("Grade")]
 		public int Grade_Id { get; set; }
 		public Grade? Grade { get; set; }
+		public List<Student_Lesson>? Student_Lessons { get; set; }
 	}
 }

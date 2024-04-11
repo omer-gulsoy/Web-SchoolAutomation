@@ -1,66 +1,30 @@
-﻿<!-- blog area start -->
-<div class="feature-blog  pt--120 pb--70">
+﻿<div class="feature-blog  pt--120 pb--70">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
 				<div class="section-title">
-					<span class="text-uppercase">Top stories</span>
-					<h2>Blog & news</h2>
+					<span class="text-uppercase">YENİ YAZILAR</span>
+					<h2>Blog & haberler</h2>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="blog-carousel owl-carousel card-deck">
-				<div class="card mb-5">
-					<img class="card-img-top" src="~/template/assets/images/blog/blog-thumbnail1.jpg" alt="image">
-					<div class="card-body p-25">
-						<ul class="list-inline primary-color mb-3">
-							<li><i class="fa fa-clock-o"></i> AUGUST 6, 2017</li>
-							<li><i class="fa fa-comments"></i> 3 Comments</li>
-						</ul>
-						<h4 class="card-title mb-4"><a href="blog-details.html">The Death Of architechture</a></h4>
-						<p class="card-text">We’re a philosophical bunch here at School site and we have thought long and hard about.</p>
-						<a class="btn btn-primary btn-round btn-sm" href="blog-details.html"> Read More </a>
+				@foreach (var b in ViewBag.Blog)
+				{
+					<div class="card mb-5">
+						<img class="card-img-top" src="@b.PhotoURL" alt="image">
+						<div class="card-body p-25">
+							<ul class="list-inline primary-color mb-3">
+								<li><i class="fa fa-comments"></i> 3 Comments</li>
+							</ul>
+							<h4 class="card-title mb-4"><a href="blog-details.html">@b.Title</a></h4>
+							<p class="card-text">@b.Summary</p>
+							<a class="btn btn-primary btn-round btn-sm" href="/Blog/Details/@b.Blog_Post_Id"> YAZIYA GİT </a>
+						</div>
 					</div>
-				</div><!-- card -->
-				<div class="card mb-5">
-					<img class="card-img-top" src="~/template/assets/images/blog/blog-thumbnail2.jpg" alt="image">
-					<div class="card-body p-25">
-						<ul class="list-inline primary-color mb-3">
-							<li><i class="fa fa-clock-o"></i> AUGUST 6, 2017</li>
-							<li><i class="fa fa-comments"></i> 3 Comments</li>
-						</ul>
-						<h4 class="card-title mb-4"><a href="blog-details.html">Aenean id ullamcorper</a></h4>
-						<p class="card-text">We’re a philosophical bunch here at School site and we have thought long and hard about.</p>
-						<a class="btn btn-primary btn-round btn-sm" href="blog-details.html"> Read More </a>
-					</div>
-				</div><!-- card -->
-
-				<div class="card mb-5">
-					<img class="card-img-top" src="~/template/assets/images/blog/blog-thumbnail3.jpg" alt="image">
-					<div class="card-body p-25">
-						<ul class="list-inline primary-color mb-3">
-							<li><i class="fa fa-clock-o"></i> AUGUST 6, 2017</li>
-							<li><i class="fa fa-comments"></i> 3 Comments</li>
-						</ul>
-						<h4 class="card-title mb-4"><a href="blog-details.html">The Death Of architechture</a></h4>
-						<p class="card-text">We’re a philosophical bunch here at School site and we have thought long and hard about.</p>
-						<a class="btn btn-primary btn-round btn-sm" href="blog-details.html"> Read More </a>
-					</div>
-				</div><!-- card -->
-				<div class="card mb-5">
-					<img class="card-img-top" src="~/template/assets/images/blog/blog-thumbnail1.jpg" alt="image">
-					<div class="card-body p-25">
-						<ul class="list-inline primary-color mb-3">
-							<li><i class="fa fa-clock-o"></i> AUGUST 6, 2017</li>
-							<li><i class="fa fa-comments"></i> 3 Comments</li>
-						</ul>
-						<h4 class="card-title mb-4"><a href="blog-details.html">The Death Of architechture</a></h4>
-						<p class="card-text">We’re a philosophical bunch here at School site and we have thought long and hard about.</p>
-						<a class="btn btn-primary btn-round btn-sm" href="blog-details.html"> Read More </a>
-					</div>
-				</div><!-- card -->
+				}
 			</div><!-- blog-carousel -->
 		</div><!-- blog-carousel -->
 	</div>
-</div> <!-- blog area end -->
+</div>

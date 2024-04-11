@@ -229,6 +229,80 @@ namespace data.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("entity.Concrate.Blog_Comment", b =>
+                {
+                    b.Property<int>("Blog_Comment_Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Blog_Comment_Id"));
+
+                    b.Property<int>("Blog_Post_Id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Comment")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Blog_Comment_Id");
+
+                    b.HasIndex("Blog_Post_Id");
+
+                    b.ToTable("Blog_Comments");
+                });
+
+            modelBuilder.Entity("entity.Concrate.Blog_Post", b =>
+                {
+                    b.Property<int>("Blog_Post_Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Blog_Post_Id"));
+
+                    b.Property<string>("Article")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhotoURL")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Summary")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Blog_Post_Id");
+
+                    b.ToTable("Blog_Posts");
+                });
+
+            modelBuilder.Entity("entity.Concrate.Blog_Subscribe", b =>
+                {
+                    b.Property<int>("Blog_Subscribe_Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Blog_Subscribe_Id"));
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Blog_Subscribe_Id");
+
+                    b.ToTable("Blog_Subscribes");
+                });
+
             modelBuilder.Entity("entity.Concrate.Contact", b =>
                 {
                     b.Property<int>("Contact_Id")
@@ -252,6 +326,31 @@ namespace data.Migrations
                     b.HasKey("Contact_Id");
 
                     b.ToTable("Contacts");
+                });
+
+            modelBuilder.Entity("entity.Concrate.Testimonial", b =>
+                {
+                    b.Property<int>("Testimonial_Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Testimonial_Id"));
+
+                    b.Property<string>("Comment")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Testimonial_Id");
+
+                    b.ToTable("Testimonials");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -303,6 +402,22 @@ namespace data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("entity.Concrate.Blog_Comment", b =>
+                {
+                    b.HasOne("entity.Concrate.Blog_Post", "Blog_Post")
+                        .WithMany("Blog_Comments")
+                        .HasForeignKey("Blog_Post_Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Blog_Post");
+                });
+
+            modelBuilder.Entity("entity.Concrate.Blog_Post", b =>
+                {
+                    b.Navigation("Blog_Comments");
                 });
 #pragma warning restore 612, 618
         }

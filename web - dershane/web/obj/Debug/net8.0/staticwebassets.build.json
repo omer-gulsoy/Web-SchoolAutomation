@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bi0I3j/ehD6VdI03MrTLL5dfuFBcIzJXlTopy1Ij1bA=",
+  "Hash": "cuLZ2IlMvNj/kUFiQEpD61EYU5YuXWbXI36Q98Dvu7Q=",
   "Source": "web",
   "BasePath": "_content/web",
   "Mode": "Default",
@@ -1746,6 +1746,25 @@
       "OriginalItemSpec": "wwwroot\\template\\assets\\images\\author\\cs-post-author1.jpg"
     },
     {
+      "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\author\\images.png",
+      "SourceId": "web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\",
+      "BasePath": "_content/web",
+      "RelativePath": "template/assets/images/author/images.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\template\\assets\\images\\author\\images.png"
+    },
+    {
       "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\bg\\abt2-bg.jpg",
       "SourceId": "web",
       "SourceType": "Discovered",
@@ -1993,12 +2012,12 @@
       "OriginalItemSpec": "wwwroot\\template\\assets\\images\\bg\\tst-bg-shape.png"
     },
     {
-      "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\blog-details.jpg",
+      "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\1.jpg",
       "SourceId": "web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\",
       "BasePath": "_content/web",
-      "RelativePath": "template/assets/images/blog/blog-details.jpg",
+      "RelativePath": "template/assets/images/blog/1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2009,15 +2028,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\template\\assets\\images\\blog\\blog-details.jpg"
+      "OriginalItemSpec": "wwwroot\\template\\assets\\images\\blog\\1.jpg"
     },
     {
-      "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\blog-thumbnail1.jpg",
+      "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\2.jpg",
       "SourceId": "web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\",
       "BasePath": "_content/web",
-      "RelativePath": "template/assets/images/blog/blog-thumbnail1.jpg",
+      "RelativePath": "template/assets/images/blog/2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2028,15 +2047,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\template\\assets\\images\\blog\\blog-thumbnail1.jpg"
+      "OriginalItemSpec": "wwwroot\\template\\assets\\images\\blog\\2.jpg"
     },
     {
-      "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\blog-thumbnail2.jpg",
+      "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\3.jpg",
       "SourceId": "web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\",
       "BasePath": "_content/web",
-      "RelativePath": "template/assets/images/blog/blog-thumbnail2.jpg",
+      "RelativePath": "template/assets/images/blog/3.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2047,15 +2066,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\template\\assets\\images\\blog\\blog-thumbnail2.jpg"
+      "OriginalItemSpec": "wwwroot\\template\\assets\\images\\blog\\3.jpg"
     },
     {
-      "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\blog-thumbnail3.jpg",
+      "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\4.jpg",
       "SourceId": "web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\",
       "BasePath": "_content/web",
-      "RelativePath": "template/assets/images/blog/blog-thumbnail3.jpg",
+      "RelativePath": "template/assets/images/blog/4.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2066,15 +2085,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\template\\assets\\images\\blog\\blog-thumbnail3.jpg"
+      "OriginalItemSpec": "wwwroot\\template\\assets\\images\\blog\\4.jpg"
     },
     {
-      "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\blog-thumbnail4.jpg",
+      "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\5.jpg",
       "SourceId": "web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\",
       "BasePath": "_content/web",
-      "RelativePath": "template/assets/images/blog/blog-thumbnail4.jpg",
+      "RelativePath": "template/assets/images/blog/5.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2085,15 +2104,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\template\\assets\\images\\blog\\blog-thumbnail4.jpg"
+      "OriginalItemSpec": "wwwroot\\template\\assets\\images\\blog\\5.jpg"
     },
     {
-      "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\blog-thumbnail5.jpg",
+      "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\6.jpg",
       "SourceId": "web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\",
       "BasePath": "_content/web",
-      "RelativePath": "template/assets/images/blog/blog-thumbnail5.jpg",
+      "RelativePath": "template/assets/images/blog/6.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2104,26 +2123,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\template\\assets\\images\\blog\\blog-thumbnail5.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\blog-thumbnail6.jpg",
-      "SourceId": "web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\",
-      "BasePath": "_content/web",
-      "RelativePath": "template/assets/images/blog/blog-thumbnail6.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\template\\assets\\images\\blog\\blog-thumbnail6.jpg"
+      "OriginalItemSpec": "wwwroot\\template\\assets\\images\\blog\\6.jpg"
     },
     {
       "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\course\\course-details.jpg",

@@ -361,6 +361,10 @@
       "PackagePath": "staticwebassets\\template\\assets\\images\\author\\cs-post-author1.jpg"
     },
     {
+      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\author\\images.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\author\\images.png"
+    },
+    {
       "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\bg\\abt2-bg.jpg",
       "PackagePath": "staticwebassets\\template\\assets\\images\\bg\\abt2-bg.jpg"
     },
@@ -413,32 +417,28 @@
       "PackagePath": "staticwebassets\\template\\assets\\images\\bg\\tst-bg-shape.png"
     },
     {
-      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\blog-details.jpg",
-      "PackagePath": "staticwebassets\\template\\assets\\images\\blog\\blog-details.jpg"
+      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\1.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\blog\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\blog-thumbnail1.jpg",
-      "PackagePath": "staticwebassets\\template\\assets\\images\\blog\\blog-thumbnail1.jpg"
+      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\2.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\blog\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\blog-thumbnail2.jpg",
-      "PackagePath": "staticwebassets\\template\\assets\\images\\blog\\blog-thumbnail2.jpg"
+      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\3.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\blog\\3.jpg"
     },
     {
-      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\blog-thumbnail3.jpg",
-      "PackagePath": "staticwebassets\\template\\assets\\images\\blog\\blog-thumbnail3.jpg"
+      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\4.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\blog\\4.jpg"
     },
     {
-      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\blog-thumbnail4.jpg",
-      "PackagePath": "staticwebassets\\template\\assets\\images\\blog\\blog-thumbnail4.jpg"
+      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\5.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\blog\\5.jpg"
     },
     {
-      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\blog-thumbnail5.jpg",
-      "PackagePath": "staticwebassets\\template\\assets\\images\\blog\\blog-thumbnail5.jpg"
-    },
-    {
-      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\blog-thumbnail6.jpg",
-      "PackagePath": "staticwebassets\\template\\assets\\images\\blog\\blog-thumbnail6.jpg"
+      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\6.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\blog\\6.jpg"
     },
     {
       "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\course\\course-details.jpg",

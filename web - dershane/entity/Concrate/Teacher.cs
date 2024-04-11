@@ -19,8 +19,8 @@ namespace entity.Concrate
         public string? Mail { get; set; }
         public bool Status { get; set; }
         public List<Class_Teacher>? Class_Teachers { get; set; }
-        [ForeignKey("Role")]
-        public int Role_Id { get; set; }
-        public Role? Role { get; set; }
+        [ForeignKey("Mission")]
+        public int Mission_Id { get; set; }
+        public Mission? Mission { get; set; }
     }
 }

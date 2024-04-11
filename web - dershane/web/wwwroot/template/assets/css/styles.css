@@ -47,6 +47,10 @@ Description: Responsive Education HTML5 Template
     background: url(/template/assets/images/bg/slider-bg3.jpg) center/cover no-repeat;
 }
 
+#ohgWhite{
+    color:white;
+}
+
 
 body {
     font-family: "Muli", sans-serif;
