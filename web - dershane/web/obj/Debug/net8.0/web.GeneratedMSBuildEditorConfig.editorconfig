@@ -30,6 +30,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Blog/PostAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmxvZ1xQb3N0QWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Blog/PostGet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmxvZ1xQb3N0R2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Bulletin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnVsbGV0aW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,6 +56,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Partials/_BlogListPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGFydGlhbHNcX0Jsb2dMaXN0UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Partials/_BlogPostAddCrumbsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGFydGlhbHNcX0Jsb2dQb3N0QWRkQ3J1bWJzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Partials/_BlogPostAddFormPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGFydGlhbHNcX0Jsb2dQb3N0QWRkRm9ybVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Partials/_BlogPostGetCrumbsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGFydGlhbHNcX0Jsb2dQb3N0R2V0Q3J1bWJzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Partials/_BlogPostGetFormPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGFydGlhbHNcX0Jsb2dQb3N0R2V0Rm9ybVBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Partials/_BulletinCrumbsPartial.cshtml]

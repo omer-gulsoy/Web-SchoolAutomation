@@ -441,6 +441,10 @@
       "PackagePath": "staticwebassets\\template\\assets\\images\\blog\\6.jpg"
     },
     {
+      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\blog\\add.png",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\blog\\add.png"
+    },
+    {
       "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\course\\course-details.jpg",
       "PackagePath": "staticwebassets\\template\\assets\\images\\course\\course-details.jpg"
     },

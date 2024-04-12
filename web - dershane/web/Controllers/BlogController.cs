@@ -10,7 +10,7 @@ namespace web.Controllers
 		[HttpGet]
 		public IActionResult Index()
 		{
-			var degerler = Context.Blog_Posts.ToList();
+			var degerler = Context.Blog_Posts.Where(x => x.Status == true).ToList();
 			return View(degerler);
 		}
 		[HttpGet]
