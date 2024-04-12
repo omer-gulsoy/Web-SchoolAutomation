@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\views\\partials\\_bloglistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\views\\partials\\_bloglistpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 21,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Contact\\Index.cshtml",
-              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Views\\Contact\\Index.cshtml",
-              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Contact\\Index.cshtml",
-              "RelativeToolTip": "web\\Areas\\Admin\\Views\\Contact\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAuAAAA",
+              "DocumentIndex": 1,
+              "Title": "_BlogListPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Partials\\_BlogListPartial.cshtml",
+              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Views\\Partials\\_BlogListPartial.cshtml",
+              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Partials\\_BlogListPartial.cshtml",
+              "RelativeToolTip": "web\\Areas\\Admin\\Views\\Partials\\_BlogListPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-11T23:30:02.977Z",
+              "WhenOpened": "2024-04-12T00:38:22.245Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ContactController.cs",
-              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Controllers\\ContactController.cs",
-              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Controllers\\ContactController.cs",
-              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Controllers\\ContactController.cs",
-              "RelativeToolTip": "web\\Areas\\Admin\\Controllers\\ContactController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAbAAAA",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Blog\\Index.cshtml",
+              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Views\\Blog\\Index.cshtml",
+              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Blog\\Index.cshtml",
+              "RelativeToolTip": "web\\Areas\\Admin\\Views\\Blog\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-12T00:30:55.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Controllers\\BlogController.cs",
+              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "web\\Areas\\Admin\\Controllers\\BlogController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T23:28:03.533Z",
+              "WhenOpened": "2024-04-12T00:15:50.739Z",
               "EditorCaption": ""
             }
           ]
