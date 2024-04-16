@@ -10,7 +10,7 @@ namespace web.Areas.Admin.Controllers
 		[HttpGet]
 		public IActionResult Index()
 		{
-			ViewBag.Bulletin = Context.Blog_Subscribes.ToList();
+			ViewBag.Bulletin = Context.Subscribes.ToList();
 			return View();
 		}
 	}

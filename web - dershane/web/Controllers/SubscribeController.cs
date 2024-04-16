@@ -8,9 +8,9 @@ namespace web.Controllers
 	{
 		Context Context = new Context();
 		[HttpPost]
-		public IActionResult Index(Blog_Subscribe s)
+		public IActionResult Index(Subscribe s)
 		{
-			Context.Blog_Subscribes.Add(s);
+			Context.Subscribes.Add(s);
 			Context.SaveChanges();
 			return RedirectToAction("Index", "Blog");
 		}

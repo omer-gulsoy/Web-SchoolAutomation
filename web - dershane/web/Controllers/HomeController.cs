@@ -9,7 +9,7 @@ namespace web.Controllers
 		Context Context = new Context();
 		public IActionResult Index()
 		{
-			ViewBag.Blog = Context.Blog_Posts.ToList();
+			ViewBag.Blog = Context.Blogs.ToList();
 			ViewBag.Testimonial = Context.Testimonials.ToList();
 			return View();
 		}

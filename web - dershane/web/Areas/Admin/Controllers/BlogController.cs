@@ -11,7 +11,7 @@ namespace web.Areas.Admin.Controllers
 		[HttpGet]
 		public IActionResult Index()
 		{
-			var degerler = Context.Blog_Posts.ToList();
+			var degerler = Context.Blogs.ToList();
 			return View(degerler);
 		}
 		[HttpGet]
@@ -20,28 +20,28 @@ namespace web.Areas.Admin.Controllers
 			return View();
 		}
 		[HttpPost]
-		public IActionResult PostAdd(Blog_Post p)
+		public IActionResult PostAdd(Blog p)
 		{
-			Context.Blog_Posts.Add(p);
+			Context.Blogs.Add(p);
 			Context.SaveChanges();
 			return RedirectToAction("Index", "Blog");
 			return View();
 		}
 		public IActionResult PostDelete(int id)
 		{
-			var w = Context.Blog_Posts.Find(id);
-			Context.Blog_Posts.Remove(w);
+			var w = Context.Blogs.Find(id);
+			Context.Blogs.Remove(w);
 			Context.SaveChanges();
 			return RedirectToAction("Index", "Blog");
 		}
 		public IActionResult PostGet(int id)
 		{
-			var e = Context.Blog_Posts.Find(id);
+			var e = Context.Blogs.Find(id);
 			return View("PostGet", e);
 		}
-		public IActionResult PostUpdate(Blog_Post s)
+		public IActionResult PostUpdate(Blog s)
 		{
-			var r = Context.Blog_Posts.Find(s.Blog_Post_Id);
+			var r = Context.Blogs.Find(s.Blog_Post_Id);
 			r.Blog_Post_Id = s.Blog_Post_Id;
 			r.Title = s.Title;
 			r.Summary = s.Summary;

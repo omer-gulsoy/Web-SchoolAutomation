@@ -1,5 +1,5 @@
 ﻿@using entity.Concrate
-@model Blog_Comment
+@model Comment
 <div class="leave-comment-area">
 	<h4 class="comment-title">Bir Yorumda Bulunun</h4>
 	<form method="post">
@@ -11,7 +11,7 @@
 				<input type="email" asp-for="Email" placeholder="E-Posta Adresiniz">
 			</div>
 		</div>
-		<textarea asp-for="Comment" placeholder="Yorumunuz"></textarea>
+		<textarea asp-for="Text" placeholder="Yorumunuz"></textarea>
 		<button class="btn btn-primary btn-round" type="submit">YORUMU GÖNDER <i class="fa fa-long-arrow-right"></i></button>
 	</form>
 </div>

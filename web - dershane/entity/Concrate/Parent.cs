@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace entity.Concrate
 {
-	public class Parent
+    public class Parent
 	{
 		[Key]
         public int Parent_Id { get; set; }
@@ -16,13 +16,13 @@ namespace entity.Concrate
         public string? Surname { get; set; }
         public DateTime BirthDay { get; set; }
         public int TCKNO { get; set; }
-        public int Phone { get; set; }
+        public int Phone { get; set; }  
         [ForeignKey("Town")]
         public int Hometown_Id { get; set; }
         public Town? Hometown { get; set; }
         [ForeignKey("Adress")]
         public int Adress_Id { get; set; }
         public Adress? Adress { get; set; }
-        public List<Student>? Student { get; set; }
+        public List<Student>? Students { get; set; }
     }
 }

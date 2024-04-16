@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace entity.Concrate
 {
-	public class Adress
+    public class Adress
 	{
 		[Key]
         public int Adress_Id { get; set; }
