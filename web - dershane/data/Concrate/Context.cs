@@ -15,11 +15,13 @@ namespace data.Concrate
 		{
 			optionsBuilder.UseSqlServer("server=ELITEBOOK\\MSSQLSERVER2012;database=DershaneDB;integrated security=true;TrustServerCertificate=True;");
 		}
+        public DbSet<Adress>? Adresses { get; set; }
+		public DbSet<Blog_Comment>? Blog_Comments { get; set; }
+		public DbSet<Blog_Post>? Blog_Posts { get; set; }
+		public DbSet<Blog_Subscribe>? Blog_Subscribes { get; set; }
+        public DbSet<Class>? Classes { get; set; }
         public DbSet<Contact>? Contacts { get; set; }
         public DbSet<Testimonial>? Testimonials { get; set; }
-        public DbSet<Blog_Subscribe>? Blog_Subscribes { get; set; }
-        public DbSet<Blog_Post>? Blog_Posts { get; set; }
-        public DbSet<Blog_Comment>? Blog_Comments { get; set; }
         //public DbSet<Class>? Classes { get; set; }
         //public DbSet<Class_Teacher>? Class_Teachers { get; set; }
         //public DbSet<Course>? Courses { get; set; }

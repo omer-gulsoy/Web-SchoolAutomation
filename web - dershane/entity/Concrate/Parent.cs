@@ -8,28 +8,21 @@ using System.Threading.Tasks;
 
 namespace entity.Concrate
 {
-    public class Student
-    {
-        [Key]
-        public int Student_Id { get; set; }
+	public class Parent
+	{
+		[Key]
+        public int Parent_Id { get; set; }
         public string? Name { get; set; }
         public string? Surname { get; set; }
-        public int TC { get; set; }
         public DateTime BirthDay { get; set; }
+        public int TCKNO { get; set; }
         public int Phone { get; set; }
-        public string? Mail { get; set; }
-        public bool Status { get; set; }
         [ForeignKey("Town")]
         public int Hometown_Id { get; set; }
         public Town? Hometown { get; set; }
-        [ForeignKey("Class")]
-        public int Class_Id { get; set; }
-        public Class? Class { get; set; }
         [ForeignKey("Adress")]
         public int Adress_Id { get; set; }
         public Adress? Adress { get; set; }
-        [ForeignKey("Parent")]
-        public int Parent_Id { get; set; }
-        public Parent? Parent { get; set; }
+        public List<Student>? Student { get; set; }
     }
 }

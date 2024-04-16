@@ -51,6 +51,19 @@ Description: Responsive Education HTML5 Template
     color:white;
 }
 
+#ohgList1{
+    margin-top:2px;
+}
+
+#ohgList2{
+    margin-top:5px;
+    margin-left:15px;
+}
+
+#ohgTitle {    
+    color: #fc9928 !important;
+}
+
 
 body {
     font-family: "Muli", sans-serif;

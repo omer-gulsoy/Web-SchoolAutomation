@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace entity.Concrate
 {
-	public class Class
-	{
+    public class Class
+    {
         [Key]
         public int Class_Id { get; set; }
-        public string? Name { get; set; }
-        public int Floor { get; set; }
+        public int Number { get; set; }
+        public string? Branch { get; set; }
         public bool Status { get; set; }
-        public List<Class_Teacher>? Class_Teachers { get; set; }
+        public List<Syllabus>? Syllabus { get; set; }
     }
 }

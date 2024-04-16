@@ -8,11 +8,13 @@ using System.Threading.Tasks;
 
 namespace entity.Concrate
 {
-    public class Lesson
-    {
-        [Key]
-        public int Lesson_Id { get; set; }
-        public string? Name { get; set; }
-        public bool Status { get; set; }
+	public class Syllabus
+	{
+		[Key]
+        public int Syllabus_Id { get; set; }
+        public DateTime Time { get; set; }
+        [ForeignKey("Class")]
+        public int Class_Id { get; set; }
+        public Class? Class { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Jav4K6o/V7cTl+2hCbpfgSTCaMmAIq7asYZWH1omd1A=",
+  "Hash": "5cfQXP6wzAYY0HDYU+cHb6pitUzqkXiH98RG954q6T4=",
   "Source": "web",
   "BasePath": "_content/web",
   "Mode": "Default",
@@ -2563,6 +2563,25 @@
       "OriginalItemSpec": "wwwroot\\template\\assets\\images\\icon\\cross-cursor.png"
     },
     {
+      "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\icon\\favicon.ico",
+      "SourceId": "web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\",
+      "BasePath": "_content/web",
+      "RelativePath": "template/assets/images/icon/favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\template\\assets\\images\\icon\\favicon.ico"
+    },
+    {
       "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\icon\\hb-bottom-shape.png",
       "SourceId": "web",
       "SourceType": "Discovered",
@@ -2675,6 +2694,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\template\\assets\\images\\map.png"
+    },
+    {
+      "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\p1.jpg",
+      "SourceId": "web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\",
+      "BasePath": "_content/web",
+      "RelativePath": "template/assets/images/p1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\template\\assets\\images\\p1.jpg"
     },
     {
       "Identity": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\sidebar\\banner-img.jpg",

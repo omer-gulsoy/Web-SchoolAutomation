@@ -533,6 +533,10 @@
       "PackagePath": "staticwebassets\\template\\assets\\images\\icon\\cross-cursor.png"
     },
     {
+      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\icon\\favicon.ico",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\icon\\favicon.ico"
+    },
+    {
       "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\icon\\hb-bottom-shape.png",
       "PackagePath": "staticwebassets\\template\\assets\\images\\icon\\hb-bottom-shape.png"
     },
@@ -555,6 +559,10 @@
     {
       "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\map.png",
       "PackagePath": "staticwebassets\\template\\assets\\images\\map.png"
+    },
+    {
+      "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\p1.jpg",
+      "PackagePath": "staticwebassets\\template\\assets\\images\\p1.jpg"
     },
     {
       "Id": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\wwwroot\\template\\assets\\images\\sidebar\\banner-img.jpg",
