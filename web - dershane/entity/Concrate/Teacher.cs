@@ -19,6 +19,10 @@ namespace entity.Concrate
         public int Phone { get; set; }
         public string? Email { get; set; }
         public string? Hometown { get; set; }
+        public string? PrePhotoURL { get; set; }
+        public string? DetailPhotoURL { get; set; }
+        public string? PreBio { get; set; }
+        public string? DetailBio { get; set; }
         public bool Status { get; set; }
         [ForeignKey("Lesson")]
         public int Lesson_Id { get; set; }

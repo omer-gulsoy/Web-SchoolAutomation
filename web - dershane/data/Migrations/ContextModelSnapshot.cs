@@ -534,6 +534,12 @@ namespace data.Migrations
                     b.Property<DateTime>("BirthDay")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("DetailBio")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DetailPhotoURL")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
@@ -551,6 +557,12 @@ namespace data.Migrations
 
                     b.Property<int>("Phone")
                         .HasColumnType("int");
+
+                    b.Property<string>("PreBio")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PrePhotoURL")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("Status")
                         .HasColumnType("bit");

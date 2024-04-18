@@ -9,13 +9,17 @@ namespace web.Controllers
 		[HttpGet]
 		public IActionResult Index()
 		{
+			ViewBag.Lesson = Context.Lessons.ToList();
 			var degerler = Context.Teachers.ToList();
 			return View(degerler);
 		}
 		[HttpGet]
-		public IActionResult Details()
+		public IActionResult Details(int id)
 		{
-			return View();
+			ViewBag.Comment = Context.Blogs.Where(x => x.Blog_Post_Id == id).ToList();
+			ViewBag.Lesson = Context.Lessons.ToList();
+			var e = Context.Teachers.Find(id);
+			return View("Details", e);
 		}
 	}
 }

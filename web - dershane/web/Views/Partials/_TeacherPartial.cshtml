@@ -8,18 +8,24 @@
 				</div>
 			</div>
 		</div>
-		@foreach (var t in ViewBag.Teacher)
-		{
-			<div class="teacher-carousel owl-carousel card-deck">
+		<div class="teacher-carousel owl-carousel card-deck">
+			@foreach (var t in ViewBag.Teacher)
+			{
 				<div class="card mb-5">
 					<img src="@t.PrePhotoURL" alt="image">
 					<div class="card-body teacher-content p-25">
-						<h4 class="card-title mb-4"><a href="teachers.html">@t.Name <b>@t.Surname</b></a></h4>
-						<span class="primary-color d-block mb-3">@t.Lesson</span>
+						<h4 class="card-title mb-4"><a href="/Teachers/Details/@t.Teacher_Id">@t.FirstName <b>@t.LastName</b></a></h4>
+						@foreach (var item in ViewBag.Lesson)
+						{
+							if (item.Lesson_Id == t.Lesson_Id)
+							{
+								<span class="primary-color d-block mb-3">@item.Name Dersi Öğretmeni</span>
+							}
+						}
 						<p class="card-text">@t.PreBio</p>
 					</div>
 				</div>
-			</div>
-		}
+			}
+		</div>
 	</div>
 </div>

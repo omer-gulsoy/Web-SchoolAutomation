@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\win11\Documents\Projeler\web - dershane\web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Adress/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRyZXNzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Blog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,12 +46,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQnVsbGV0aW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Class/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2xhc3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Lesson/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTGVzc29uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Parent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGFyZW50XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Partials/_BlogCrumbsPartial.cshtml]
@@ -90,6 +106,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGFydGlhbHNcX0NvbnRhY3RMaXN0UGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Partials/_CrumbsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGFydGlhbHNcX0NydW1ic1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Partials/_HomeCrumbsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGFydGlhbHNcX0hvbWVDcnVtYnNQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -110,6 +130,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Schedule/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2NoZWR1bGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Shared/LayoutPartials/_FooterPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXExheW91dFBhcnRpYWxzXF9Gb290ZXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -128,6 +152,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Shared/LayoutPartials/_ScriptPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXExheW91dFBhcnRpYWxzXF9TY3JpcHRQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Student/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Teacher/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVGVhY2hlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/win11/Documents/Projeler/web - dershane/web/Views/About/Index.cshtml]
@@ -264,6 +296,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Partials/_TeachersDetailsCrumbsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHNcX1RlYWNoZXJzRGV0YWlsc0NydW1ic1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Partials/_TeachersDetailsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbHNcX1RlYWNoZXJzRGV0YWlsc1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/win11/Documents/Projeler/web - dershane/web/Views/Partials/_TeachersListPartial.cshtml]
