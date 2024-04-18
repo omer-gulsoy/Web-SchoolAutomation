@@ -11,6 +11,7 @@ namespace web.Controllers
 		{
 			ViewBag.Blog = Context.Blogs.ToList();
 			ViewBag.Testimonial = Context.Testimonials.ToList();
+			ViewBag.Teacher = Context.Teachers.ToList();
 			return View();
 		}
 	}

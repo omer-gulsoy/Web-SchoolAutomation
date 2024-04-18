@@ -1,22 +1,25 @@
 ﻿<div class="teacher-area pb--70">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 col-md-6">
-                <div class="section-title">
-                    <span class="text-uppercase"><span class="primary-color">EN İYİLERİNDEN</span> ÖĞRENİN </span>
-                    <h2>Eğitim Kadromuz </h2>
-                </div>
-            </div>
-        </div>
-        <div class="teacher-carousel owl-carousel card-deck">
-            <div class="card mb-5">
-                <img src="~/template/assets/images/teacher/teacher-member1.jpg" alt="image">
-                <div class="card-body teacher-content p-25">
-                    <h4 class="card-title mb-4"><a href="teachers.html">Patrick Garner Dony</a></h4>
-                    <span class="primary-color d-block mb-3">Economist</span>
-                    <p class="card-text">We’re a philosophical bunch here at School site and we have thought long and hard about.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5 col-md-6">
+				<div class="section-title">
+					<span class="text-uppercase"><span class="primary-color">EN İYİLERİNDEN</span> ÖĞRENİN </span>
+					<h2>Eğitim Kadromuz </h2>
+				</div>
+			</div>
+		</div>
+		@foreach (var t in ViewBag.Teacher)
+		{
+			<div class="teacher-carousel owl-carousel card-deck">
+				<div class="card mb-5">
+					<img src="@t.PrePhotoURL" alt="image">
+					<div class="card-body teacher-content p-25">
+						<h4 class="card-title mb-4"><a href="teachers.html">@t.Name <b>@t.Surname</b></a></h4>
+						<span class="primary-color d-block mb-3">@t.Lesson</span>
+						<p class="card-text">@t.PreBio</p>
+					</div>
+				</div>
+			</div>
+		}
+	</div>
 </div>

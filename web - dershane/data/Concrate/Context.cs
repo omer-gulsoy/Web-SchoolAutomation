@@ -16,18 +16,17 @@ namespace data.Concrate
 		{
 			optionsBuilder.UseSqlServer("server=ELITEBOOK\\MSSQLSERVER2012;database=DershaneDB;integrated security=true;TrustServerCertificate=True;");
 		}
-		public DbSet<Adress>? Adresses { get; set; }
 		public DbSet<Blog>? Blogs { get; set; }
-		public DbSet<Class>? Classes { get; set; }
 		public DbSet<Comment>? Comments { get; set; }
 		public DbSet<Contact>? Contacts { get; set; }
-		public DbSet<Lesson>? Lessons { get; set; }
-		public DbSet<Parent>? Parents { get; set; }
-		public DbSet<Student>? Students { get; set; }
 		public DbSet<Subscribe>? Subscribes { get; set; }
-		public DbSet<Syllabus>? Syllabuses { get; set; }
-		public DbSet<Teacher>? Teachers { get; set; }
 		public DbSet<Testimonial>? Testimonials { get; set; }
-		public DbSet<Town>? Towns { get; set; }
-	}
+        public DbSet<Adress>? Adresses { get; set; }
+        public DbSet<Class>? Classes { get; set; }
+        public DbSet<Lesson>? Lessons { get; set; }
+        public DbSet<Parent>? Parents { get; set; }
+        public DbSet<Schedule>? Schedules { get; set; }
+        public DbSet<Student>? Students { get; set; }
+        public DbSet<Teacher>? Teachers { get; set; }
+    }
 }

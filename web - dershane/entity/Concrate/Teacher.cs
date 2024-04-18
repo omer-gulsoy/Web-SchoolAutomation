@@ -10,24 +10,19 @@ namespace entity.Concrate
 {
 	public class Teacher
 	{
-		[Key]
-		public int Teacher_Id { get; set; }
-		public string? Name { get; set; }
-		public string? Surname { get; set; }
-		public int TCKNO { get; set; }
-		public DateTime BirthDay { get; set; }
-		public int Phone { get; set; }
-		public string? Mail { get; set; }
-		public bool Status { get; set; }
-		[ForeignKey("Town")]
-		public int Hometown_Id { get; set; }
-		public Town? Hometown { get; set; }
-		[ForeignKey("Lesson")]
-		public int Lesson_Id { get; set; }
-		public Lesson? Lesson { get; set; }
-		[ForeignKey("Adress")]
-		public int Adress_Id { get; set; }
-		public Adress? Adress { get; set; }
-        public List<Syllabus>? Syllabus { get; set; }
-	}
+        [Key]
+        public int Teacher_Id { get; set; }
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
+        public int TC { get; set; }
+        public DateTime BirthDay { get; set; }
+        public int Phone { get; set; }
+        public string? Email { get; set; }
+        public string? Hometown { get; set; }
+        public bool Status { get; set; }
+        [ForeignKey("Lesson")]
+        public int Lesson_Id { get; set; }
+        public Lesson? Lesson { get; set; }
+        public List<Schedule>? Schedules { get; set; }
+    }
 }

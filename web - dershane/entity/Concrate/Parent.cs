@@ -8,18 +8,18 @@ using System.Threading.Tasks;
 
 namespace entity.Concrate
 {
-    public class Parent
+	public class Parent
 	{
-		[Key]
+        [Key]
         public int Parent_Id { get; set; }
-        public string? Name { get; set; }
-        public string? Surname { get; set; }
-        public DateTime BirthDay { get; set; }
-        public int TCKNO { get; set; }
-        public int Phone { get; set; }  
-        [ForeignKey("Town")]
-        public int Hometown_Id { get; set; }
-        public Town? Hometown { get; set; }
+        public string? FirstName { get; set; }
+        public string? LastName { get; set; }
+        public int TC { get; set; }
+        public DateTime BirtDay { get; set; }
+        public int Phone { get; set; }
+        public string? Email { get; set; }
+        public string? Hometown { get; set; }
+        public bool Status { get; set; }
         [ForeignKey("Adress")]
         public int Adress_Id { get; set; }
         public Adress? Adress { get; set; }
