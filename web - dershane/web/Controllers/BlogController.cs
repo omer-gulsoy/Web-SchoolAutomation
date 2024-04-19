@@ -17,7 +17,7 @@ namespace web.Controllers
 		public IActionResult Details(int id)
 		{
 			ViewBag.Posts = Context.Blogs.ToList();
-			ViewBag.Comment = Context.Blogs.Where(x => x.Blog_Post_Id == id).ToList();
+			ViewBag.Comment = Context.Blogs.Where(x => x.BlogPost_Id == id).ToList();
 			var e = Context.Blogs.Find(id);
 			return View("Details", e);
 		}

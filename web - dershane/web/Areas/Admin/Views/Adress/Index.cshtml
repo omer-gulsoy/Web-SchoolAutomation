@@ -29,19 +29,6 @@
 							<h4><span class="text-warning">Sokak: </span>@item.Street</h4>
 							<h4><span class="text-warning">Bina Numarası: </span>@item.NO</h4>
 							<h4><span class="text-warning">Kapı Numarası: </span>@item.Apartment</h4>
-							<h4>
-								<span class="text-warning">Adres Statüsü:</span>@switch (item.Status)
-								{
-									case true:
-										<span>Aktif</span>
-										break;
-									case false:
-										<span>Pasif</span>
-										break;
-									default:
-										<span></span>
-								}
-							</h4>
 							<a href="/Admin/Adress/AdressGet/@item.Adress_Id"><i class="fa fa-pencil">  DÜZENLE</i></a>
 
 							<br />

@@ -47,7 +47,7 @@ namespace web.Areas.Admin.Controllers
 			guncellenecek.FirstName = p.FirstName;
 			guncellenecek.LastName = p.LastName;
 			guncellenecek.TC = p.TC;
-			guncellenecek.BirtDay = p.BirtDay;
+			guncellenecek.BirthDay = p.BirthDay;
 			guncellenecek.Phone = p.Phone;
 			guncellenecek.Email = p.Email;
 			guncellenecek.Hometown = p.Hometown;

@@ -17,7 +17,6 @@ namespace entity.Concrate
         public string? Street { get; set; }
         public int NO { get; set; }
         public int Apartment { get; set; }
-        public bool Status { get; set; }
         public List<Student>? Students { get; set; }
         public List<Teacher>? Teachers { get; set; }
         public List<Parent>? Parents { get; set; }

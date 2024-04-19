@@ -48,7 +48,6 @@ namespace web.Areas.Admin.Controllers
 			guncellenecek.Street = a.Street;
 			guncellenecek.NO = a.NO;
 			guncellenecek.Apartment = a.Apartment;
-			guncellenecek.Status = a.Status;
 			Context.SaveChanges();
 			return RedirectToAction("Index", "Adress");
 		}

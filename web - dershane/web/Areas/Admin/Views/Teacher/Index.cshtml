@@ -7,9 +7,9 @@
 <div class="all-teachers  pt--120 pb--70">
 	<div class="container">
 		<div class="row">
-			@foreach (var t in Model)
-			{
-				<div class="col-lg-4 col-md-6">
+			<div class="col-lg-4 col-md-6">
+				@foreach (var t in Model)
+				{
 					<div class="card mb-5">
 						<img src="@t.PrePhotoURL" alt="image">
 						<div class="card-body teacher-content p-25">
@@ -25,8 +25,15 @@
 							<a href="/Admin/Teacher/TeacherDelete/@t.Teacher_Id"><i class="fa fa-trash text-danger">  SİL</i></a>
 						</div>
 					</div>
+				}
+				<div class="card mb-5">
+					<img class="card-img-top" src="~/template/assets/images/blog/add.png" alt="image">
+					<div class="card-body p-25">
+						<h4 class="card-title mb-4"><a href="/Admin/Teacher/TeacherAdd">Öğretmen Ekle</a></h4>
+						<a class="btn btn-success btn-round btn-sm" href="/Admin/Teacher/TeacherAdd">ÖĞRETMEN EKLE</a>
+					</div>
 				</div>
-			}
+			</div>
 		</div>
 	</div>
 </div>

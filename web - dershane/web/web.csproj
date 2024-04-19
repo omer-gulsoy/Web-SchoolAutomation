@@ -31,10 +31,4 @@
     <ProjectReference Include="..\entity\entity.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Views\Partials\" />
-  </ItemGroup>
-
 </Project>

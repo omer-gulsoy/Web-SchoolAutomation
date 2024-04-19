@@ -15,7 +15,7 @@ namespace entity.Concrate
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public int TC { get; set; }
-        public DateTime BirtDay { get; set; }
+        public DateTime BirthDay { get; set; }
         public int Phone { get; set; }
         public string? Email { get; set; }
         public string? Hometown { get; set; }

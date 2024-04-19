@@ -40,8 +40,8 @@ namespace web.Areas.Admin.Controllers
 		}
 		public IActionResult PostUpdate(Blog s)
 		{
-			var r = Context.Blogs.Find(s.Blog_Post_Id);
-			r.Blog_Post_Id = s.Blog_Post_Id;
+			var r = Context.Blogs.Find(s.BlogPost_Id);
+			r.BlogPost_Id = s.BlogPost_Id;
 			r.Title = s.Title;
 			r.Summary = s.Summary;
 			r.Article = s.Article;

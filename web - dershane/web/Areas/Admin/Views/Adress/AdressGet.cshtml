@@ -44,14 +44,6 @@
 							<h2 class="mb-2">Kapı Numarası</h2>
 							@Html.TextBoxFor(model => model.Apartment, new { @class = "form-control" })
 						</div>
-						<div class="col-md-4">
-							<h2 class="mb-2">Adres Statüsü</h2>
-							@Html.DropDownList("Status", new SelectList(new List<Object>
-						{
-						new { Value = "true", Text = "Aktif" },
-						new { Value = "false", Text = "Pasif" }
-						}, "Value", "Text"), "Lütfen adres statüsünü seçiniz...", new { @class = "form-control" })
-						</div>
 						<div class="col-md-4 text-center">
 							<button type="submit">DEĞİŞİKLİKLERİ KAYDET</button>
 						</div>

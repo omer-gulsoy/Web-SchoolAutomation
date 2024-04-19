@@ -10,7 +10,7 @@ namespace entity.Concrate
 	public class Blog
 	{
         [Key]
-        public int Blog_Post_Id { get; set; }
+        public int BlogPost_Id { get; set; }
         public string? Title { get; set; }
         public string? Summary { get; set; }
         public string? Article { get; set; }

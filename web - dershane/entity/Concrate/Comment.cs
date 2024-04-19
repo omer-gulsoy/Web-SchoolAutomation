@@ -17,7 +17,7 @@ namespace entity.Concrate
 		public string? Text { get; set; }
 		public bool Status { get; set; }
 		[ForeignKey("Blog_Post")]
-		public int Blog_Post_Id { get; set; }
+		public int BlogPost_Id { get; set; }
 		public Blog? Blog_Post { get; set; }
 	}
 }
