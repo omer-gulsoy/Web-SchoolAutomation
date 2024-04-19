@@ -14,34 +14,34 @@
 				</div>
 			</div>
 		</div>
-		<div class="contact-form">
+		<div class="contact-form mt-5">
 			<form method="post">
 				<div class="row">
-					<div class="col-md-4">
-						<h2 class="mb-2">İl</h2>
-						@Html.TextBoxFor(x => x.City, new { placeholder = "Lütfen metin giriniz...", @class = "form-control" })
+					<div class="col-md-6">
+						<h5 class="mb-2">İl</h5>
+						@Html.TextBoxFor(x => x.City, new { @class = "form-control" })
 					</div>
-					<div class="col-md-4">
-						<h2 class="mb-2">İlçe</h2>
-						@Html.TextBoxFor(x => x.Town, new { placeholder = "Lütfen metin giriniz...", @class = "form-control" })
+					<div class="col-md-6">
+						<h5 class="mb-2">İlçe</h5>
+						@Html.TextBoxFor(x => x.Town, new { @class = "form-control" })
 					</div>
-					<div class="col-md-4">
-						<h2 class="mb-2">Mahalle</h2>
-						@Html.TextBoxFor(x => x.Neighbourhood, new { placeholder = "Lütfen metin giriniz...", @class = "form-control" })
+					<div class="col-md-6">
+						<h5 class="mb-2">Mahalle</h5>
+						@Html.TextBoxFor(x => x.Neighbourhood, new { @class = "form-control" })
 					</div>
-					<div class="col-md-4">
-						<h2 class="mb-2">Sokak</h2>
-						@Html.TextBoxFor(x => x.Street, new { placeholder = "Lütfen metin giriniz...", @class = "form-control" })
+					<div class="col-md-6">
+						<h5 class="mb-2">Sokak</h5>
+						@Html.TextBoxFor(x => x.Street, new { @class = "form-control" })
 					</div>
-					<div class="col-md-4">
-						<h2 class="mb-2">Bina Numarası</h2>
-						@Html.TextBoxFor(x => x.NO, new { placeholder = "Lütfen metin giriniz...", @class = "form-control" })
+					<div class="col-md-6">
+						<h5 class="mb-2">Bina Numarası</h5>
+						@Html.TextBoxFor(x => x.NO, new { @class = "form-control" })
 					</div>
-					<div class="col-md-4">
-						<h2 class="mb-2">Kapı Numarası</h2>
-						@Html.TextBoxFor(x => x.Apartment, new { placeholder = "Lütfen metin giriniz...", @class = "form-control" })
+					<div class="col-md-6">
+						<h5 class="mb-2">Kapı Numarası</h5>
+						@Html.TextBoxFor(x => x.Apartment, new { @class = "form-control" })
 					</div>
-					<div class="col-md-4 text-center">
+					<div class="col-md-12 text-center">
 						<button type="submit">ADRES OLUŞTUR</button>
 					</div>
 				</div>
