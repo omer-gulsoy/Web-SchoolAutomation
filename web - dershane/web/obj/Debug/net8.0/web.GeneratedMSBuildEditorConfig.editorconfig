@@ -26,6 +26,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\win11\Documents\Projeler\web - dershane\web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Adress/AdressAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRyZXNzXEFkcmVzc0FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Adress/AdressGet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRyZXNzXEFkcmVzc0dldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/win11/Documents/Projeler/web - dershane/web/Areas/Admin/Views/Adress/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRyZXNzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

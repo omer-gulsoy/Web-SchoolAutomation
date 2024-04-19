@@ -3,51 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\views\\class\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\views\\class\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\views\\adress\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\views\\adress\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\controllers\\adresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\controllers\\adresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\views\\lesson\\lessonget.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\views\\lesson\\lessonget.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\views\\class\\classget.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\views\\class\\classget.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\views\\class\\classadd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\views\\class\\classadd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|c:\\users\\win11\\documents\\projeler\\web - dershane\\web\\areas\\admin\\views\\adress\\adressget.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3844C1B4-6C4B-46B8-BEF7-16A16C87B3BA}|web\\web.csproj|solutionrelative:web\\areas\\admin\\views\\adress\\adressget.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 239,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 29,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LessonController.cs",
-              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Controllers\\LessonController.cs",
-              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Controllers\\LessonController.cs",
-              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Controllers\\LessonController.cs",
-              "RelativeToolTip": "web\\Areas\\Admin\\Controllers\\LessonController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAowCQAAAAdAAAA",
+              "DocumentIndex": 1,
+              "Title": "AdressController.cs",
+              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Controllers\\AdressController.cs",
+              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Controllers\\AdressController.cs",
+              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Controllers\\AdressController.cs",
+              "RelativeToolTip": "web\\Areas\\Admin\\Controllers\\AdressController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAiwDAAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T06:16:06.364Z",
+              "WhenOpened": "2024-04-19T08:28:37.39Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Adress\\Index.cshtml",
+              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Views\\Adress\\Index.cshtml",
+              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Adress\\Index.cshtml",
+              "RelativeToolTip": "web\\Areas\\Admin\\Views\\Adress\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T08:32:38.686Z",
               "EditorCaption": ""
             },
             {
@@ -60,74 +65,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LessonGet.cshtml",
-              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Lesson\\LessonGet.cshtml",
-              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Views\\Lesson\\LessonGet.cshtml",
-              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Lesson\\LessonGet.cshtml",
-              "RelativeToolTip": "web\\Areas\\Admin\\Views\\Lesson\\LessonGet.cshtml",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAMAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-19T07:46:27.86Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedHeight": 161,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClassController.cs",
-              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Controllers\\ClassController.cs",
-              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Controllers\\ClassController.cs",
-              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Controllers\\ClassController.cs",
-              "RelativeToolTip": "web\\Areas\\Admin\\Controllers\\ClassController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAUwB8AAAAjAAAA",
+              "DocumentIndex": 2,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Controllers\\BlogController.cs",
+              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "web\\Areas\\Admin\\Controllers\\BlogController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwCcAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T07:08:56.197Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-04-19T08:32:06.969Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Class\\Index.cshtml",
-              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Views\\Class\\Index.cshtml",
-              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Class\\Index.cshtml",
-              "RelativeToolTip": "web\\Areas\\Admin\\Views\\Class\\Index.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAcAAAAYAAAA",
+              "DocumentIndex": 3,
+              "Title": "AdressGet.cshtml",
+              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Adress\\AdressGet.cshtml",
+              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Views\\Adress\\AdressGet.cshtml",
+              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Adress\\AdressGet.cshtml",
+              "RelativeToolTip": "web\\Areas\\Admin\\Views\\Adress\\AdressGet.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-19T07:52:41.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ClassAdd.cshtml",
-              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Class\\ClassAdd.cshtml",
-              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Views\\Class\\ClassAdd.cshtml",
-              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Class\\ClassAdd.cshtml",
-              "RelativeToolTip": "web\\Areas\\Admin\\Views\\Class\\ClassAdd.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-19T07:47:19.775Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClassGet.cshtml",
-              "DocumentMoniker": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Class\\ClassGet.cshtml",
-              "RelativeDocumentMoniker": "web\\Areas\\Admin\\Views\\Class\\ClassGet.cshtml",
-              "ToolTip": "C:\\Users\\win11\\Documents\\Projeler\\web - dershane\\web\\Areas\\Admin\\Views\\Class\\ClassGet.cshtml",
-              "RelativeToolTip": "web\\Areas\\Admin\\Views\\Class\\ClassGet.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAmwBEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-19T07:45:44.247Z",
+              "WhenOpened": "2024-04-19T08:31:36.637Z",
               "EditorCaption": ""
             }
           ]

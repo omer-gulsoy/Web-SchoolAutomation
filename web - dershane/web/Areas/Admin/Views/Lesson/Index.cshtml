@@ -19,23 +19,25 @@
 			{
 				<div class="col-md-6">
 					<div class="media align-items-center mb-5">
-						<div class="media-body">
-							<h4 class="mb-1 mt-5"><span class="text-warning">Ders İsmi: </span> @item.Name</h4>
-							<div class="mb-3">
+						<div class="media-head primary-bg">
+							<p>
 								@switch (item.Status)
 								{
 									case false:
-										<h7 class="mb-5"><span class="text-warning">Ders Statüsü: </span>Pasif</h7>
+										<h7 class="mb-5"><span class="text-warning">Statü: </span>Pasif</h7>
 										<br />
 										break;
 									case true:
-										<h7 class="mb-5"><span class="text-warning">Ders Staüsü: </span>Aktif</h7>
+										<h7 class="mb-5"><span class="text-warning">Statü: </span>Aktif</h7>
 										<br />
 										break;
 									default:
 										<br />
 								}
-							</div>
+								</p>
+						</div>
+						<div class="media-body">
+							<h4 class="mb-1 mt-5"><span class="text-warning">Ders İsmi: </span> @item.Name</h4>
 							<a href="/Admin/Lesson/LessonGet/@item.Lesson_Id"><i class="fa fa-pencil">  DÜZENLE</i></a><br />
 							<a href="/Admin/Lesson/LessonDelete/@item.Lesson_Id"><i class="fa fa-trash text-danger">  SİL</i></a>
 						</div>
@@ -45,7 +47,7 @@
 			<div class="col-md-6">
 				<div class="media align-items-center m-5">
 					<div class="media-body">
-						<h4 class="mb-5 mt-5"><a class="text-success" href="/Admin/Lesson/LessonAdd"><i class="fa fa-plus text-success">   Ders Oluştur</i></a></h4>
+						<h4 class="m-3"><a class="text-success" href="/Admin/Lesson/LessonAdd"><i class="fa fa-plus text-success">   Ders Oluştur</i></a></h4>
 					</div>
 				</div>
 			</div>

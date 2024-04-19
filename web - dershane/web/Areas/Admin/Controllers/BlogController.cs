@@ -25,7 +25,6 @@ namespace web.Areas.Admin.Controllers
 			Context.Blogs.Add(p);
 			Context.SaveChanges();
 			return RedirectToAction("Index", "Blog");
-			return View();
 		}
 		public IActionResult PostDelete(int id)
 		{
