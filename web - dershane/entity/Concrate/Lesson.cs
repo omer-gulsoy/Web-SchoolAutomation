@@ -12,6 +12,7 @@ namespace entity.Concrate
         [Key]
         public int Lesson_Id { get; set; }
         public string? Name { get; set; }
+        public bool Status { get; set; }
         public List<Teacher>? Teachers { get; set; }
     }
 }

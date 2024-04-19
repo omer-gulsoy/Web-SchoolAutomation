@@ -10,7 +10,7 @@ namespace web.Controllers
 		public IActionResult Index()
 		{
 			ViewBag.Lesson = Context.Lessons.ToList();
-			var degerler = Context.Teachers.ToList();
+			var degerler = Context.Teachers.Where(x => x.Status == true).ToList();
 			return View(degerler);
 		}
 		[HttpGet]

@@ -9,11 +9,12 @@ namespace entity.Concrate
 {
 	public class Class
 	{
-        [Key]
-        public int Class_Id { get; set; }
-        public int Number { get; set; }
-        public string? Branch { get; set; }
-        public List<Student>? Students { get; set; }
-        public List<Schedule>? Schedules { get; set; }
-    }
+		[Key]
+		public int Class_Id { get; set; }
+		public int Number { get; set; }
+		public string? Branch { get; set; }
+		public bool Status { get; set; }
+		public List<Student>? Students { get; set; }
+		public List<Schedule>? Schedules { get; set; }
+	}
 }

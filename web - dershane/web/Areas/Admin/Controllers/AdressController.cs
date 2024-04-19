@@ -7,8 +7,6 @@ namespace web.Areas.Admin.Controllers
 	{
 		public IActionResult Index()
 		{
-			string Title = "Adres";
-			ViewBag.Title = Title;
 			return View();
 		}
 	}

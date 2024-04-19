@@ -4,6 +4,7 @@
 <body>
 	@await Html.PartialAsync("~/Areas/Admin/Views/Shared/LayoutPartials/_PreloaderPartial.cshtml")
 	@await Html.PartialAsync("~/Areas/Admin/Views/Shared/LayoutPartials/_HeaderPartial.cshtml")
+	@await Html.PartialAsync("~/Areas/Admin/Views/Shared/LayoutPartials/_CrumbsPartial.cshtml")
 	@RenderBody()
 	@await Html.PartialAsync("~/Areas/Admin/Views/Shared/LayoutPartials/_FooterPartial.cshtml")
 	@await Html.PartialAsync("~/Areas/Admin/Views/Shared/LayoutPartials/_ScriptPartial.cshtml")

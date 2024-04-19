@@ -1,0 +1,43 @@
+﻿@using entity.Concrate
+@model Lesson
+@{
+	ViewData["Title"] = "Ders Düzenleme";
+	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm("LessonUpdate", "Lesson", FormMethod.Post))
+{
+	<div class="contact-form-area pb--120">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 offset-md-1">
+					<div class="cnt-title">
+						<h4>Dersi <span>düzenleyin</span></h4>
+						<p>Dersleri düzenleyin ve eğitimin gelişmesine yardımcı olun</p>
+					</div>
+				</div>
+			</div>
+			<div class="contact-form">
+				<form method="post">
+					<div class="row">
+						@Html.TextBoxFor(model => model.Lesson_Id, new { style = "display:none;" })
+						<div class="col-md-4">
+							<h2 class="mb-2">Ders İsmi</h2>
+							@Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+						</div>
+						<div class="col-md-4">
+							<h2 class="mb-2">Ders Statüsü</h2>
+							@Html.DropDownList("Status", new SelectList(new List<Object>
+						{
+						new { Value = "true", Text = "Aktif" },
+						new { Value = "false", Text = "Pasif" }
+						}, "Value", "Text"), "Ders statüsünü seçiniz...", new { @class = "form-control" })
+						</div>
+						<div class="col-md-4 text-center">
+							<button type="submit">DEĞİŞİKLİKLERİ KAYDET</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+}

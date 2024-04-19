@@ -305,6 +305,9 @@ namespace data.Migrations
                     b.Property<int>("Number")
                         .HasColumnType("int");
 
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
                     b.HasKey("Class_Id");
 
                     b.ToTable("Classes");
@@ -375,6 +378,9 @@ namespace data.Migrations
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
 
                     b.HasKey("Lesson_Id");
 

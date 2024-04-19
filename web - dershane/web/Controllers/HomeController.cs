@@ -9,10 +9,10 @@ namespace web.Controllers
 		Context Context = new Context();
 		public IActionResult Index()
 		{
-			ViewBag.Blog = Context.Blogs.ToList();
-			ViewBag.Testimonial = Context.Testimonials.ToList();
-			ViewBag.Teacher = Context.Teachers.ToList();
-			ViewBag.Lesson=Context.Lessons.ToList();
+			ViewBag.Blog = Context.Blogs.Where(x => x.Status == true).ToList();
+			ViewBag.Testimonial = Context.Testimonials.Where(x => x.Status == true).ToList();
+			ViewBag.Teacher = Context.Teachers.Where(x => x.Status == true).ToList();
+			ViewBag.Lesson = Context.Lessons.ToList();
 			return View();
 		}
 	}
