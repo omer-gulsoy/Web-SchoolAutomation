@@ -25,7 +25,6 @@ namespace web.Areas.Admin.Controllers
 			Context.Lessons.Add(l);
 			Context.SaveChanges();
 			return RedirectToAction("Index", "Lesson");
-			return View();
 		}
 		public IActionResult LessonDelete(int id)
 		{

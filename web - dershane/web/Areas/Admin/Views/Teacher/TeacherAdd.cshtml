@@ -1,0 +1,83 @@
+﻿@using entity.Concrate
+@model Teacher
+@{
+	ViewData["Title"] = "Öğretmen Ekleme";
+	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="contact-form-area pb--120">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 offset-md-1">
+				<div class="cnt-title">
+					<h4>Öğretmen <span>oluşturun</span></h4>
+					<p>Öğretmen oluşturun ve eğitimin gelişmesine yardımcı olun</p>
+				</div>
+			</div>
+		</div>
+		<div class="contact-form">
+			<form method="post">
+				<div class="row">
+					<div class="col-md-4">
+						<h2 class="mb-2">Öğretmen İsmi</h2>
+						@Html.TextBoxFor(x => x.FirstName, new { placeholder = "Lütfen metin giriniz...", @class = "form-control" })
+					</div>
+					<div class="col-md-4">
+						<h2 class="mb-2">Öğretmen Soyismis</h2>
+						@Html.TextBoxFor(x => x.LastName, new { placeholder = "Lütfen metin giriniz...", @class = "form-control" })
+					</div>
+					<div class="col-md-4">
+						<h2 class="mb-2">Öğretmen T.C. Kimlik Numarası</h2>
+						@Html.TextBoxFor(x => x.TC, new { placeholder = "Lütfen metin giriniz...", @class = "form-control" })
+					</div>
+					<div class="col-md-4">
+						<h2 class="mb-2">Öğretmen Doğum Tarihi</h2>
+						@Html.TextBoxFor(model => model.BirthDay, new { placeholder = "Lütfen metin giriniz...", @class = "form-control", @id = "birthDayPicker" })
+					</div>
+					<div class="col-md-4">
+						<h2 class="mb-2">Öğretmen Telefon Numarası</h2>
+						@Html.TextBoxFor(x => x.Phone, new { placeholder = "Lütfen metin giriniz...", @class = "form-control" })
+					</div>
+					<div class="col-md-4">
+						<h2 class="mb-2">Öğretmen E-Posta Adresi</h2>
+						@Html.TextBoxFor(x => x.Email, new { placeholder = "Lütfen metin giriniz...", @class = "form-control" })
+					</div>
+					<div class="col-md-4">
+						<h2 class="mb-2">Öğretmen Doğum Yeri</h2>
+						@Html.TextBoxFor(x => x.Hometown, new { placeholder = "Lütfen metin giriniz...", @class = "form-control" })
+					</div>
+					<div class="col-md-4">
+						<h2 class="mb-2">Öğretmen Önizleme Metni</h2>
+						@Html.TextBoxFor(x => x.PreBio, new { placeholder = "Lütfen metin giriniz...", @class = "form-control" })
+					</div>
+					<div class="col-md-4">
+						<h2 class="mb-2">Öğretmen Detay Metni</h2>
+						@Html.TextBoxFor(x => x.DetailBio, new { placeholder = "Lütfen metin giriniz...", @class = "form-control" })
+					</div>
+					<div class="col-md-4">
+						<h2 class="mb-2">Öğretmen Önizleme Fotoğrafı Dosya Yolu</h2>
+						@Html.TextBoxFor(x => x.PrePhotoURL, new { placeholder = "Lütfen metin giriniz...", @class = "form-control" })
+					</div>
+					<div class="col-md-4">
+						<h2 class="mb-2">Öğretmen Detay Fotoğrafı Dosya Yolu</h2>
+						@Html.TextBoxFor(x => x.DetailPhotoURL, new { placeholder = "Lütfen metin giriniz...", @class = "form-control" })
+					</div>
+					<div class="col-md-4">
+						<h2 class="mb-2">Öğretmen Ders Alanı</h2>
+						@Html.DropDownListFor(x => x.Lesson_Id, new SelectList(ViewBag.Lessons, "Lesson_Id", "Name"), "Lütfen bir ders seçiniz...", new { @class = "form-control" })
+					</div>
+					<div class="col-md-4">
+						<h2 class="mb-2">Öğretmen Statüsü</h2>
+						@Html.DropDownList("Status", new SelectList(new List<Object>
+						{
+						new { Value = "true", Text = "Aktif" },
+						new { Value = "false", Text = "Pasif" }
+						}, "Value", "Text"), "Lütfen öğretmen statüsünü seçiniz...", new { @class = "form-control" })
+					</div>
+					<div class="col-md-4 text-center">
+						<button type="submit">ÖĞRETMEN OLUŞTUR</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

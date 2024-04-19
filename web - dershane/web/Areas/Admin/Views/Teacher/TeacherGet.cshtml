@@ -1,0 +1,83 @@
+﻿@using entity.Concrate
+@model Teacher
+@{
+    ViewData["Title"] = "Öğretmen Düzenleme";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm("TeacherUpdate", "Teacher", FormMethod.Post))
+{
+	<div class="contact-form-area pb--120">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 offset-md-1">
+					<div class="cnt-title">
+						<h4>Öğretmeni <span>düzenleyin</span></h4>
+						<p>Öğretmenleri düzenleyin ve eğitimin gelişmesine yardımcı olun</p>
+					</div>
+				</div>
+			</div>
+			<div class="contact-form">
+				<form method="post">
+					<div class="row">
+						@Html.TextBoxFor(model => model.Teacher_Id, new { style = "display:none;" })
+						<div class="col-md-4">
+							<h2 class="mb-2">Öğretmen İsmi</h2>
+							@Html.TextBoxFor(model => model.FirstName, new { @class = "form-control" })
+						</div>
+						<div class="col-md-4">
+							<h2 class="mb-2">Öğretmen Soyismi</h2>
+							@Html.TextBoxFor(model => model.LastName, new { @class = "form-control" })
+						</div>
+						<div class="col-md-4">
+							<h2 class="mb-2">Öğretmen T.C. Kimlik Numarası</h2>
+							@Html.TextBoxFor(model => model.TC, new { @class = "form-control" })
+						</div>
+						<div class="col-md-4">
+							<h2 class="mb-2">Öğretmen Doğum Tarihi</h2>
+							@Html.TextBoxFor(model => model.BirthDay, new { @class = "form-control", @id = "birthDayPicker" })
+						</div>
+						<div class="col-md-4">
+							<h2 class="mb-2">Öğretmen Telefon Numarası</h2>
+							@Html.TextBoxFor(model => model.Phone, new { @class = "form-control" })
+						</div>
+						<div class="col-md-4">
+							<h2 class="mb-2">Öğretmen E-Posta Adresi</h2>
+							@Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+						</div>
+						<div class="col-md-4">
+							<h2 class="mb-2">Doğum Yeri</h2>
+							@Html.TextBoxFor(model => model.Hometown, new { @class = "form-control" })
+						</div>
+						<div class="col-md-4">
+							<h2 class="mb-2">Öğretmen Önizleme Metni</h2>
+							@Html.TextBoxFor(model => model.Hometown, new { @class = "form-control" })
+						</div>
+						<div class="col-md-4">
+							<h2 class="mb-2">Öğretmen Detaylar Metni</h2>
+							@Html.TextBoxFor(model => model.Hometown, new { @class = "form-control" })
+						</div>
+						<div class="col-md-4">
+							<h2 class="mb-2">Öğretmen Önizleme Fotoğrafı Dosya Yolu</h2>
+							@Html.TextBoxFor(model => model.PrePhotoURL, new { @class = "form-control" })
+						</div>
+						<div class="col-md-4">
+							<h2 class="mb-2">Öğretmen Detaylar Fotoğrafı Dosya Yolu</h2>
+							@Html.TextBoxFor(model => model.DetailPhotoURL, new { @class = "form-control" })
+						</div>
+						<div class="col-md-4">
+							<h2 class="mb-2">Öğretmen Statüsü</h2>
+							@Html.DropDownList("Status", new SelectList(new List<Object>
+						{
+						new { Value = "true", Text = "Aktif" },
+						new { Value = "false", Text = "Pasif" }
+						}, "Value", "Text"), "Lütfen öğretmen statüsünü seçiniz...", new { @class = "form-control" })
+						</div>
+						<div class="col-md-4 text-center">
+							<button type="submit">DEĞİŞİKLİKLERİ KAYDET</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+}
