@@ -1,0 +1,72 @@
+﻿@using entity.Concrate
+@model Parent
+@{
+	ViewData["Title"] = "Veli Düzenleme";
+	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm("ParentUpdate", "Parent", FormMethod.Post))
+{
+	<div class="contact-form-area pb--120">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 offset-md-1">
+					<div class="cnt-title">
+						<h4>Veli <span>düzenleyin</span></h4>
+						<p>Velileri düzenleyin ve eğitimin gelişmesine yardımcı olun</p>
+					</div>
+				</div>
+			</div>
+			<div class="contact-form">
+				<form method="post">
+					<div class="row">
+						@Html.TextBoxFor(model => model.Parent_Id, new { style = "display:none;" })
+						<div class="col-md-6">
+							<h2 class="mb-2">Veli İsmi</h2>
+							@Html.TextBoxFor(model => model.FirstName, new { @class = "form-control" })
+						</div>
+						<div class="col-md-6">
+							<h2 class="mb-2">Veli Soyismi</h2>
+							@Html.TextBoxFor(model => model.LastName, new { @class = "form-control" })
+						</div>
+						<div class="col-md-6">
+							<h2 class="mb-2">Veli T.C. Kimlik Numarası</h2>
+							@Html.TextBoxFor(model => model.TC, new { @class = "form-control" })
+						</div>
+						<div class="col-md-6">
+							<h2 class="mb-2">Veli Doğum Tarihi</h2>
+							@Html.TextBoxFor(model => model.BirtDay, new { placeholder = "Lütfen metin giriniz...", @class = "form-control", @id = "birthDayPicker" })
+						</div>
+						<div class="col-md-6">
+							<h2 class="mb-2">Veli Telefon Numarası</h2>
+							@Html.TextBoxFor(model => model.Phone, new { @class = "form-control" })
+						</div>
+						<div class="col-md-6">
+							<h2 class="mb-2">Veli E-Posta Adresi</h2>
+							@Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+						</div>
+						<div class="col-md-6">
+							<h2 class="mb-2">Veli Doğum Yeri</h2>
+							@Html.TextBoxFor(model => model.Hometown, new { @class = "form-control" })
+						</div>
+						<div class="col-md-6">
+							<h2 class="mb-2">Veli Adres ID</h2>
+							@Html.TextBoxFor(model => model.Adress_Id, new { @class = "form-control" })
+						</div>
+
+						<div class="col-md-6">
+							<h2 class="mb-2">Veli Statüsü</h2>
+							@Html.DropDownList("Status", new SelectList(new List<Object>
+						{
+						new { Value = "true", Text = "Aktif" },
+						new { Value = "false", Text = "Pasif" }
+						}, "Value", "Text"), "Lütfen veli statüsünü seçiniz...", new { @class = "form-control" })
+						</div>
+						<div class="col-md-6 text-center">
+							<button type="submit">DEĞİŞİKLİKLERİ KAYDET</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+}
