@@ -16,7 +16,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="contact-form">
+			<div class="contact-form mt-5">
 				<form method="post">
 					<div class="row">
 						@Html.TextBoxFor(model => model.Class_Id, new { style = "display:none;" })
@@ -77,8 +77,8 @@
 						new { Value = "false", Text = "Pasif" }
 						}, "Value", "Text"), "Lütfen sınıf statüsünü seçiniz...", new { @class = "form-control" })
 						</div>
-						<div class="col-md-4 text-center">
-							<button type="submit">DEĞİŞİKLİKLERİ KAYDET</button>
+						<div class="col-md-12 mt-5 text-center">
+							<button type="submit"class="btn-primary">DEĞİŞKLİKLERİ KAYDET</button>
 						</div>
 					</div>
 				</form>

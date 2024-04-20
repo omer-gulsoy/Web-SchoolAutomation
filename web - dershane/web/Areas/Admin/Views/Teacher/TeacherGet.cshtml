@@ -21,59 +21,55 @@
 					<div class="row">
 						@Html.TextBoxFor(model => model.Teacher_Id, new { style = "display:none;" })
 						<div class="col-md-4">
-							<h2 class="mb-2">Öğretmen İsmi</h2>
-							@Html.TextBoxFor(model => model.FirstName, new { @class = "form-control" })
+							<h2 class="mb-2">İsim</h2>
+							@Html.TextBoxFor(model => model.FirstName, new { @class = "form-control", maxlength = 50 })
 						</div>
 						<div class="col-md-4">
-							<h2 class="mb-2">Öğretmen Soyismi</h2>
-							@Html.TextBoxFor(model => model.LastName, new { @class = "form-control" })
+							<h2 class="mb-2"> Soyisim</h2>
+							@Html.TextBoxFor(x => x.LastName, new { @class = "form-control", maxlength = 20 })
 						</div>
 						<div class="col-md-4">
-							<h2 class="mb-2">Öğretmen T.C. Kimlik Numarası</h2>
-							@Html.TextBoxFor(model => model.TC, new { @class = "form-control" })
+							<h2 class="mb-2"> T.C. Kimlik Numarası</h2>
+							@Html.TextBoxFor(x => x.TC, new { @class = "form-control", maxlength = 11 })
 						</div>
 						<div class="col-md-4">
-							<h2 class="mb-2">Öğretmen Doğum Tarihi</h2>
-							@Html.TextBoxFor(model => model.BirthDay, new { @class = "form-control", @id = "birthDayPicker" })
+							<h2 class="mb-2"> Doğum Tarihi</h2>
+							@Html.TextBoxFor(model => model.BirthDay, "{0:yyyy-MM-dd}", new { @class = "form-control", @type = "date" })
 						</div>
 						<div class="col-md-4">
-							<h2 class="mb-2">Öğretmen Telefon Numarası</h2>
-							@Html.TextBoxFor(model => model.Phone, new { @class = "form-control" })
+							<h2 class="mb-2"> Telefon Numarası</h2>
+							@Html.TextBoxFor(x => x.Phone, new { @class = "form-control", placeholder = "Başında 0 olmadan giriniz.", maxlength = 10 })
 						</div>
 						<div class="col-md-4">
-							<h2 class="mb-2">Öğretmen E-Posta Adresi</h2>
+							<h2 class="mb-2"> E-Posta Adresi</h2>
 							@Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
 						</div>
 						<div class="col-md-4">
-							<h2 class="mb-2">Doğum Yeri</h2>
-							@Html.TextBoxFor(model => model.Hometown, new { @class = "form-control" })
+							<h2 class="mb-2"> Önizleme Metni</h2>
+							@Html.TextBoxFor(model => model.PreBio, new { @class = "form-control" })
 						</div>
 						<div class="col-md-4">
-							<h2 class="mb-2">Öğretmen Önizleme Metni</h2>
-							@Html.TextBoxFor(model => model.Hometown, new { @class = "form-control" })
+							<h2 class="mb-2"> Detaylar Metni</h2>
+							@Html.TextBoxFor(model => model.DetailBio, new { @class = "form-control" })
 						</div>
 						<div class="col-md-4">
-							<h2 class="mb-2">Öğretmen Detaylar Metni</h2>
-							@Html.TextBoxFor(model => model.Hometown, new { @class = "form-control" })
-						</div>
-						<div class="col-md-4">
-							<h2 class="mb-2">Öğretmen Önizleme Fotoğrafı Dosya Yolu</h2>
+							<h2 class="mb-2"> Önizleme Fotoğrafı Dosya Yolu</h2>
 							@Html.TextBoxFor(model => model.PrePhotoURL, new { @class = "form-control" })
 						</div>
 						<div class="col-md-4">
-							<h2 class="mb-2">Öğretmen Detaylar Fotoğrafı Dosya Yolu</h2>
+							<h2 class="mb-2"> Detaylar Fotoğrafı Dosya Yolu</h2>
 							@Html.TextBoxFor(model => model.DetailPhotoURL, new { @class = "form-control" })
 						</div>
 						<div class="col-md-4">
-							<h2 class="mb-2">Öğretmen Statüsü</h2>
+							<h2 class="mb-2"> Statüsü</h2>
 							@Html.DropDownList("Status", new SelectList(new List<Object>
 						{
 						new { Value = "true", Text = "Aktif" },
 						new { Value = "false", Text = "Pasif" }
-						}, "Value", "Text"), "Lütfen öğretmen statüsünü seçiniz...", new { @class = "form-control" })
+						}, "Value", "Text"), "Lütfen  statü seçiniz...", new { @class = "form-control" })
 						</div>
-						<div class="col-md-4 text-center">
-							<button type="submit">DEĞİŞİKLİKLERİ KAYDET</button>
+						<div class="col-md-12 mt-5 text-center">
+							<button type="submit" class="btn-primary">DEĞİŞKLİKLERİ KAYDET</button>
 						</div>
 					</div>
 				</form>

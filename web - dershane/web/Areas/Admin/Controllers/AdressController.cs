@@ -11,12 +11,14 @@ namespace web.Areas.Admin.Controllers
 		[HttpGet]
 		public IActionResult Index()
 		{
+			ViewBag.City = Context.Cities.ToList();
 			var adresler = Context.Adresses.ToList();
 			return View(adresler);
 		}
 		[HttpGet]
 		public IActionResult AdressAdd()
 		{
+			ViewBag.City = Context.Cities.ToList();
 			return View();
 		}
 		[HttpPost]

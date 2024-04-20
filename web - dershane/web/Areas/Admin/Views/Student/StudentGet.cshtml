@@ -22,31 +22,27 @@
 						@Html.TextBoxFor(model => model.Student_Id, new { style = "display:none;" })
 						<div class="col-md-6">
 							<h2 class="mb-2">Öğrenci İsmi</h2>
-							@Html.TextBoxFor(model => model.FirstName, new { @class = "form-control" })
+							@Html.TextBoxFor(model => model.FirstName, new { @class = "form-control", maxlength = 50 })
 						</div>
 						<div class="col-md-6">
 							<h2 class="mb-2">Öğrenci Soyismi</h2>
-							@Html.TextBoxFor(model => model.LastName, new { @class = "form-control" })
+							@Html.TextBoxFor(x => x.LastName, new { @class = "form-control", maxlength = 20 })
 						</div>
 						<div class="col-md-6">
 							<h2 class="mb-2">Öğrenci T.C. Kimlik Numarası</h2>
-							@Html.TextBoxFor(model => model.TC, new { @class = "form-control" })
+							@Html.TextBoxFor(x => x.TC, new { @class = "form-control", maxlength = 11 })
 						</div>
 						<div class="col-md-6">
 							<h2 class="mb-2">Öğrenci Doğum Tarihi</h2>
-							@Html.TextBoxFor(model => model.BirthDay, new { placeholder = "Lütfen metin giriniz...", @class = "form-control", @id = "birthDayPicker" })
+							@Html.TextBoxFor(model => model.BirthDay, "{0:yyyy-MM-dd}", new { @class = "form-control", @type = "date" })
 						</div>
 						<div class="col-md-6">
 							<h2 class="mb-2">Öğrenci Telefon Numarası</h2>
-							@Html.TextBoxFor(model => model.Phone, new { @class = "form-control" })
+							@Html.TextBoxFor(x => x.Phone, new { @class = "form-control", placeholder = "Başında 0 olmadan giriniz.", maxlength = 10 })
 						</div>
 						<div class="col-md-6">
 							<h2 class="mb-2">Öğrenci E-Posta Adresi</h2>
 							@Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
-						</div>
-						<div class="col-md-6">
-							<h2 class="mb-2">Öğrenci Doğum Yeri</h2>
-							@Html.TextBoxFor(model => model.Hometown, new { @class = "form-control" })
 						</div>
 						<div class="col-md-6">
 							<h2 class="mb-2">Öğrenci Adres ID</h2>
@@ -69,8 +65,8 @@
 						new { Value = "false", Text = "Pasif" }
 						}, "Value", "Text"), "Lütfen öğrenci statüsünü seçiniz...", new { @class = "form-control" })
 						</div>
-						<div class="col-md-6 text-center">
-							<button type="submit">DEĞİŞİKLİKLERİ KAYDET</button>
+						<div class="col-md-12 mt-5 text-center">
+							<button type="submit" class="btn-primary">DEĞİŞKLİKLERİ KAYDET</button>
 						</div>
 					</div>
 				</form>

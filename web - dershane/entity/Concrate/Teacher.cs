@@ -18,7 +18,6 @@ namespace entity.Concrate
         public DateTime BirthDay { get; set; }
         public int Phone { get; set; }
         public string? Email { get; set; }
-        public string? Hometown { get; set; }
         public string? PrePhotoURL { get; set; }
         public string? DetailPhotoURL { get; set; }
         public string? PreBio { get; set; }
@@ -27,6 +26,10 @@ namespace entity.Concrate
         [ForeignKey("Lesson")]
         public int Lesson_Id { get; set; }
         public Lesson? Lesson { get; set; }
-        public List<Schedule>? Schedules { get; set; }
+
+		[ForeignKey("City")]
+		public int City_Id { get; set; }
+		public City? City { get; set; }
+		public List<Schedule>? Schedules { get; set; }
     }
 }

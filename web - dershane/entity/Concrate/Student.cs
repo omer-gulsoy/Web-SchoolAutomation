@@ -18,7 +18,6 @@ namespace entity.Concrate
         public DateTime BirthDay { get; set; }
         public int Phone { get; set; }
         public string? Email { get; set; }
-        public string? Hometown { get; set; }
         public bool Status { get; set; }
         [ForeignKey("Class")]
         public int Class_Id { get; set; }
@@ -29,5 +28,9 @@ namespace entity.Concrate
         [ForeignKey("Parent")]
         public int Parent_Id { get; set; }
         public Parent? Parent { get; set; }
-    }
+
+		[ForeignKey("City")]
+		public int City_Id { get; set; }
+		public City? City { get; set; }
+	}
 }

@@ -19,39 +19,39 @@
 				<div class="row">
 					<div class="col-md-6">
 						<h5 class="mb-2">İsim</h5>
-						@Html.TextBoxFor(x => x.FirstName, new { @class = "form-control" })
+						@Html.TextBoxFor(model => model.FirstName, new { @class = "form-control", maxlength = 50 })
 					</div>
 					<div class="col-md-6">
 						<h5 class="mb-2"> Soyisim</h5>
-						@Html.TextBoxFor(x => x.LastName, new { @class = "form-control" })
+						@Html.TextBoxFor(x => x.LastName, new { @class = "form-control", maxlength = 20 })
 					</div>
 					<div class="col-md-6">
 						<h5 class="mb-2"> T.C. Kimlik Numarası</h5>
-						@Html.TextBoxFor(x => x.TC, new { @class = "form-control" })
+						@Html.TextBoxFor(x => x.TC, new { @class = "form-control", maxlength = 11 })
 					</div>
 					<div class="col-md-6">
 						<h5 class="mb-2"> Doğum Tarihi</h5>
-						@Html.TextBoxFor(model => model.BirthDay, new { @class = "form-control", @id = "birthDayPicker" })
+						@Html.TextBoxFor(model => model.BirthDay, "{0:yyyy-MM-dd}", new { @class = "form-control", @type = "date" })
 					</div>
 					<div class="col-md-6">
 						<h5 class="mb-2"> Telefon Numarası</h5>
-						@Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+						@Html.TextBoxFor(x => x.Phone, new { @class = "form-control", placeholder = "Başında 0 olmadan giriniz.", maxlength = 10 })
 					</div>
 					<div class="col-md-6">
 						<h5 class="mb-2"> E-Posta Adresi</h5>
 						@Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
 					</div>
 					<div class="col-md-6">
-						<h5 class="mb-2"> Doğum Yeri</h5>
-						@Html.TextBoxFor(x => x.Hometown, new { @class = "form-control" })
+						<h5 class="mb-2">Şehir</h5>
+						@Html.DropDownListFor(x => x.City_Id, new SelectList(ViewBag.City, "City_Id", "Name"), "Lütfen bir il seçiniz...", new { @class = "form-control" })
 					</div>
 					<div class="col-md-6">
 						<h5 class="mb-2"> Adres ID</h5>
 						@Html.TextBoxFor(x => x.Adress_Id, new { @class = "form-control" })
 					</div>
 					<div class="col-md-6">
-						<h5 class="mb-2"> Sınıf ID</h5>
-						@Html.TextBoxFor(x => x.Class_Id, new { @class = "form-control" })
+						<h5 class="mb-2"> Sınıf</h5>
+						@Html.DropDownListFor(x => x.Class_Id, ViewBag.Class as SelectList, "Lütfen bir sınıf seçiniz...", new { @class = "form-control" })
 					</div>
 					<div class="col-md-6">
 						<h5 class="mb-2"> Statü</h5>

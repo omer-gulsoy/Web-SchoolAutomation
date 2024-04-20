@@ -18,6 +18,7 @@ namespace web.Areas.Admin.Controllers
 		[HttpGet]
 		public IActionResult ParentAdd()
 		{
+			ViewBag.City = Context.Cities.ToList();
 			ViewBag.Adresses=Context.Adresses.ToList();
 			return View();
 		}
@@ -50,7 +51,6 @@ namespace web.Areas.Admin.Controllers
 			guncellenecek.BirthDay = p.BirthDay;
 			guncellenecek.Phone = p.Phone;
 			guncellenecek.Email = p.Email;
-			guncellenecek.Hometown = p.Hometown;
 			guncellenecek.Status = p.Status;
 			guncellenecek.Adress_Id = p.Adress_Id;
 			Context.SaveChanges();

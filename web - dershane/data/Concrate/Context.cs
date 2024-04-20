@@ -28,5 +28,6 @@ namespace data.Concrate
         public DbSet<Schedule>? Schedules { get; set; }
         public DbSet<Student>? Students { get; set; }
         public DbSet<Teacher>? Teachers { get; set; }
+        public DbSet<City>? Cities { get; set; }
     }
 }

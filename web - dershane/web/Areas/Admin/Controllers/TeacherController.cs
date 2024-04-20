@@ -18,6 +18,7 @@ namespace web.Areas.Admin.Controllers
 		[HttpGet]
 		public IActionResult TeacherAdd()
 		{
+			ViewBag.City = Context.Cities.ToList();
 			ViewBag.Lessons = Context.Lessons.ToList();
 			return View();
 		}
@@ -50,7 +51,6 @@ namespace web.Areas.Admin.Controllers
 			guncellenecek.BirthDay = t.BirthDay;
 			guncellenecek.Phone = t.Phone;
 			guncellenecek.Email = t.Email;
-			guncellenecek.Hometown = t.Hometown;
 			guncellenecek.PrePhotoURL = t.PrePhotoURL;
 			guncellenecek.DetailPhotoURL = t.DetailPhotoURL;
 			guncellenecek.PreBio = t.PreBio;

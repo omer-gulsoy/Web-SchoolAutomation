@@ -23,7 +23,13 @@
 							<p><span>ID: </span>@item.Adress_Id</p>
 						</div>
 						<div class="media-body">
-							<h4><span class="text-warning">İl: </span>@item.City</h4>
+							@foreach (var i in ViewBag.City)
+							{
+								if (i.City_Id==item.City_Id)
+								{
+									<h4><span class="text-warning">İl: </span>@i.Name</h4>
+								}
+							}
 							<h4><span class="text-warning">İlçe: </span>@item.Town</h4>
 							<h4><span class="text-warning">Mahalle: </span>@item.Neighbourhood</h4>
 							<h4><span class="text-warning">Sokak: </span>@item.Street</h4>
