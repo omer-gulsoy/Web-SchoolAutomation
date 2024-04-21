@@ -25,7 +25,6 @@ namespace web.Areas.Admin.Controllers
 				Class_Id = c.Class_Id,
 				NumberAndBranch = $"{c.Number} {c.Branch}"
 			}).ToList();
-
 			ViewBag.Class = new SelectList(classes, "Class_Id", "NumberAndBranch");
 			return View();
 		}

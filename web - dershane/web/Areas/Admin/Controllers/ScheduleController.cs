@@ -1,6 +1,7 @@
 ﻿using data.Concrate;
 using entity.Concrate;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace web.Areas.Admin.Controllers
 {
@@ -11,11 +12,29 @@ namespace web.Areas.Admin.Controllers
 		[HttpGet]
 		public IActionResult Index()
 		{
-			return View();
+			DateTime startOfWeek = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek);
+			DateTime endOfWeek = startOfWeek.AddDays(6);
+			var degerler = Context.Schedules.Where(x => x.Time >= startOfWeek && x.Time <= endOfWeek).ToList();
+			ViewBag.Teacher = Context.Teachers.ToList();
+			ViewBag.Lesson = Context.Lessons.ToList();
+			ViewBag.Class = Context.Classes.ToList();
+			return View(degerler);
 		}
 		[HttpGet]
 		public IActionResult ScheduleAdd()
 		{
+			var classes = Context.Classes.Select(c => new
+			{
+				Class_Id = c.Class_Id,
+				NumberAndBranch = $"{c.Number} {c.Branch}"
+			}).ToList();
+			ViewBag.Class = new SelectList(classes, "Class_Id", "NumberAndBranch");
+			var teachers = Context.Teachers.Select(t => new
+			{
+				Teacher_Id = t.Teacher_Id,
+				FullName = $"{t.FirstName} {t.LastName}"
+			}).ToList();
+			ViewBag.Teacher = new SelectList(teachers, "Teacher_Id", "FullName");
 			return View();
 		}
 		[HttpPost]
@@ -34,6 +53,21 @@ namespace web.Areas.Admin.Controllers
 		}
 		public IActionResult ScheduleGet(int id)
 		{
+
+			var classes = Context.Classes.Select(c => new
+			{
+				Class_Id = c.Class_Id,
+				NumberAndBranch = $"{c.Number} {c.Branch}"
+			}).ToList();
+			ViewBag.Class = new SelectList(classes, "Class_Id", "NumberAndBranch");
+
+			var teachers = Context.Teachers.Select(t => new
+			{
+				Teacher_Id = t.Teacher_Id,
+				FullName = $"{t.FirstName} {t.LastName}"
+			}).ToList();
+			ViewBag.Teacher = new SelectList(teachers, "Teacher_Id", "FullName");
+
 			var getirilecek = Context.Schedules.Find(id);
 			return View("Schedule", getirilecek);
 		}

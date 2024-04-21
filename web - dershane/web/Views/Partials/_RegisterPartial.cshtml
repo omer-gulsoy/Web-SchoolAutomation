@@ -1,41 +1,47 @@
 ﻿@model AppUserRegisterDto
 <div class="contact-form-area pb--120">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 offset-md-1">
-                <div class="cnt-title">
-                    <h4>Merhaba !</h4>
-                    <p>Kayıt formunu doldurduktan sonra, öğrencilerimiz dikkatle incelenir ve en uygun eğitim programı belirlenir. Kayıt süreci tamamlandığında, öğrencilerimiz için özelleştirilmiş bir öğrenme yolculuğu başlar. </p>
-                </div>
-            </div>
-        </div>
-        <div class="contact-form">
-            <form method="post">
-                <div class="row">
-                    <div class="col-md-4">
-                        <input type="text" asp-for="Name" placeholder="İsminiz">
-                    </div>
-                    <div class="col-md-4">
-                        <input type="text" asp-for="Surname" placeholder="Soyisminiz">
-                    </div>
-                    <div class="col-md-4">
-                        <input type="email" asp-for="UserName" placeholder="E-Posta Adresiniz">
-                    </div>
-                    <div class="col-md-4">
-                        <input type="password" asp-for="Password" placeholder="Parolanız">
-                    </div>
-                    <div class="col-md-4">
-                        <input type="password" asp-for="ConfirmPassword" placeholder="Parolanızı tekrar giriniz">
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <button type="submit">HESAP OLUŞTUR</button>
-                    </div>
-                    <div>
-                        <p class="text-center">Hesabınız var mı? <a href="/Login/Index">Giriş Yapınız.</a></p>
-                    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 offset-md-1">
+				<div class="cnt-title">
+					<h4>Merhaba !</h4>
+					<p>Kayıt formunu doldurduktan sonra, öğrencilerimiz dikkatle incelenir ve en uygun eğitim programı belirlenir. Kayıt süreci tamamlandığında, öğrencilerimiz için özelleştirilmiş bir öğrenme yolculuğu başlar. </p>
+				</div>
+			</div>
+		</div>
+		<div class="contact-form">
+			<form method="post">
+				<div class="row">
 
-                </div>
-            </form>
-        </div>
-    </div>
+					<div class="col-md-6">
+						<h5 class="mb-2">İsminiz</h5>
+						<input type="text" asp-for="Name">
+					</div>
+					<div class="col-md-6">
+						<h5 class="mb-2">Soyisminiz</h5>
+						<input type="text" asp-for="Surname" >
+					</div>
+					<div class="col-md-6">
+						<h5 class="mb-2">E-Posta Adresiniz</h5>
+						<input type="email" asp-for="UserName">
+					</div>
+					<div class="col-md-6">
+						<h5 class="mb-2">Parolanız</h5>
+						<input type="password" asp-for="Password" >
+					</div>
+					<div class="col-md-6">
+						<h5 class="mb-2">Parolanızı tekrar giriniz</h5>
+						<input type="password" asp-for="ConfirmPassword">
+					</div>
+					<div class="col-md-12 text-center">
+						<button type="submit">HESAP OLUŞTUR</button>
+					</div>
+					<div>
+						<p class="text-center">Hesabınız var mı? <a href="/Login/Index">Giriş Yapınız.</a></p>
+					</div>
+
+				</div>
+			</form>
+		</div>
+	</div>
 </div>
