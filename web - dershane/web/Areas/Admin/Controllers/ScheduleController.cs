@@ -69,7 +69,7 @@ namespace web.Areas.Admin.Controllers
 			ViewBag.Teacher = new SelectList(teachers, "Teacher_Id", "FullName");
 
 			var getirilecek = Context.Schedules.Find(id);
-			return View("Schedule", getirilecek);
+			return View("ScheduleGet", getirilecek);
 		}
 		public IActionResult ScheduleUpdate(Schedule s)
 		{

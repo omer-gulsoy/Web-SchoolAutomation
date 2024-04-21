@@ -21,7 +21,7 @@
 					<div class="row">
 						@Html.TextBoxFor(model => model.Class_Id, new { style = "display:none;" })
 						<div class="col-md-4">
-							<h2 class="mb-2">Sınıf Zümresi</h2>
+							<h5 class="mb-2">Sınıf Zümresi</h5>
 							@Html.DropDownList("Number", new SelectList(new List<Object>
 						{
 						new { Value = 1, Text = "1. Sınıf" },
@@ -41,7 +41,7 @@
 						}, "Value", "Text"), "Lütfen sınıf zümresini seçiniz...", new { @class = "form-control" })
 						</div>
 						<div class="col-md-4">
-							<h2 class="mb-2">Sınıf Şubesi</h2>
+							<h5 class="mb-2">Sınıf Şubesi</h5>
 							@Html.DropDownList("Branch", new SelectList(new List<Object>
 						{
 						new { Value = "A", Text = "A Şubesi" },
@@ -70,7 +70,7 @@
 						}, "Value", "Text"), "Lütfen sınıf şubesini seçiniz...", new { @class = "form-control" })
 						</div>
 						<div class="col-md-4">
-							<h2 class="mb-2">Sınıf Statüsü</h2>
+							<h5 class="mb-2">Sınıf Statüsü</h5>
 							@Html.DropDownList("Status", new SelectList(new List<Object>
 						{
 						new { Value = "true", Text = "Aktif" },

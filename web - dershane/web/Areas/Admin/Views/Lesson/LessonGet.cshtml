@@ -20,12 +20,12 @@
 				<form method="post">
 					<div class="row">
 						@Html.TextBoxFor(model => model.Lesson_Id, new { style = "display:none;" })
-						<div class="col-md-4">
-							<h2 class="mb-2">Ders İsmi</h2>
+						<div class="col-md-6">
+							<h5 class="mb-2">Ders İsmi</h5>
 							@Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
 						</div>
-						<div class="col-md-4">
-							<h2 class="mb-2">Ders Statüsü</h2>
+						<div class="col-md-6">
+							<h5 class="mb-2">Ders Statüsü</h5>
 							@Html.DropDownList("Status", new SelectList(new List<Object>
 						{
 						new { Value = "true", Text = "Aktif" },

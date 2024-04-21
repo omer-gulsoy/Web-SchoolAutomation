@@ -1,4 +1,5 @@
-﻿using entity.Concrate;
+﻿using data.Concrate;
+using entity.Concrate;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using web.Models;
@@ -25,7 +26,20 @@ namespace web.Controllers
 			var result = await _signInManager.PasswordSignInAsync(loginViewModel.UserName, loginViewModel.Password, false, false);
 			if (result.Succeeded)
 			{
-				return RedirectToAction("Index", "Home", new { area = "Admin" });
+				var user = await _userManager.FindByNameAsync(loginViewModel.UserName);
+				var roles = await _userManager.GetRolesAsync(user);
+				if (roles.Contains("Admin"))
+				{
+					return RedirectToAction("Index", "Home", new { area = "Admin" });
+				}
+				else if (roles.Contains("Teacher"))
+				{
+					return RedirectToAction("Index", "Home", new { area = "Teacher" });
+				}
+				else
+				{
+					return RedirectToAction("Index", "Home", new { area = "Student" });
+				}
 			}
 			return View();
 		}

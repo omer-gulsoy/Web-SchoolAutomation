@@ -6,7 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<Context>();
-builder.Services.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<Context>();
+builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
+builder.Services.AddControllersWithViews();
+
+
 
 var app = builder.Build();
 
@@ -31,6 +34,16 @@ app.UseEndpoints(endpoints =>
 		name: "Admin",
 		areaName: "Admin",
 		pattern: "Admin/{controller=Home}/{action=Index}/{id?}"
+		);
+	endpoints.MapAreaControllerRoute(
+		name: "Student",
+		areaName: "Student",
+		pattern: "Student/{controller=Home}/{action=Index}/{id?}"
+		);
+	endpoints.MapAreaControllerRoute(
+		name: "Teacher",
+		areaName: "Teacher",
+		pattern: "Teacher/{controller=Home}/{action=Index}/{id?}"
 		);
 	endpoints.MapDefaultControllerRoute();
 });
