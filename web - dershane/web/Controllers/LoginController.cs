@@ -20,6 +20,11 @@ namespace web.Controllers
 		{
 			return View();
 		}
+		[HttpGet]
+		public IActionResult Uncheck()
+		{
+			return View();
+		}
 		[HttpPost]
 		public async Task<IActionResult> Index(LoginViewModel loginViewModel)
 		{
@@ -36,9 +41,17 @@ namespace web.Controllers
 				{
 					return RedirectToAction("Index", "Home", new { area = "Teacher" });
 				}
-				else
+				else if (roles.Contains("Parent"))
+				{
+					return RedirectToAction("Index", "Home", new { area = "Parent" });
+				}
+				else if (roles.Contains("Student"))
 				{
 					return RedirectToAction("Index", "Home", new { area = "Student" });
+				}
+				else
+				{
+					return RedirectToAction("Uncheck", "Login");
 				}
 			}
 			return View();

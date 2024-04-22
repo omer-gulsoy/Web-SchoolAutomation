@@ -13,21 +13,25 @@
 			<form method="post">
 				<div class="row">
 
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<h5 class="mb-2">İsminiz</h5>
-						<input type="text" asp-for="Name">
+						<input type="text" asp-for="Name" oninput="this.value = this.value.replace(/[^a-zA-ZğüşıöçĞÜŞİÖÇ]/g, '')">
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<h5 class="mb-2">Soyisminiz</h5>
-						<input type="text" asp-for="Surname" >
+						<input type="text" asp-for="Surname" oninput="this.value = this.value.replace(/[^a-zA-ZğüşıöçĞÜŞİÖÇ]/g, '').toUpperCase()">
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<h5 class="mb-2">E-Posta Adresiniz</h5>
-						<input type="email" asp-for="UserName">
+						<input type="email" asp-for="Email">
+					</div>
+					<div class="col-md-6">
+						<h5 class="mb-2">T.C. Kimlik Numaranız</h5>
+						<input type="text" asp-for="UserName" maxlength="11" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
 					</div>
 					<div class="col-md-6">
 						<h5 class="mb-2">Parolanız</h5>
-						<input type="password" asp-for="Password" >
+						<input type="password" asp-for="Password">
 					</div>
 					<div class="col-md-6">
 						<h5 class="mb-2">Parolanızı tekrar giriniz</h5>
