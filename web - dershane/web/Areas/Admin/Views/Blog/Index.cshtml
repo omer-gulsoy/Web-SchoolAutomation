@@ -16,25 +16,43 @@
 		</div>
 		<div class="row">
 			<div class="blog-carousel owl-carousel card-deck">
+				<div class="card mb-5">
+					<div class="media align-items-center">
+						<div class="media-body primary-bg">
+							<div class="mt-5 mb-5 text-center d-flex justify-content-center">
+								<p>
+									<a> </a><br />
+									<a> </a><br />
+									<a> </a><br />
+									<a> </a><br />
+									<a> </a><br />
+									<a> </a><br />
+									<a class="btn btn-success btn-round btn-sm" href="/Admin/Blog/PostAdd">GÖNDERİ OLUŞTUR</a>
+									<a> </a><br />
+									<a> </a><br />
+									<a> </a><br />
+									<a> </a><br />
+									<a> </a><br />
+									<a> </a><br />
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 				@foreach (var b in Model)
 				{
 					<div class="card mb-5">
-						<img class="card-img-top" src="@b.PhotoURL" alt="image">
+						<img class="card-img-top" src="~/template/assets/images/blog/5.jpg" alt="image">
 						<div class="card-body p-25">
 							<h4 class="card-title mb-4"><a href="/Admin/Blog/PostGet/@b.BlogPost_Id">@b.Title</a></h4>
 							<p class="card-text">@b.Summary</p>
-							<a class="btn btn-danger btn-round btn-sm" href="/Admin/Blog/PostDelete/@b.BlogPost_Id">SİL</a>
-							<a class="btn btn-primary btn-round btn-sm" href="/Admin/Blog/PostGet/@b.BlogPost_Id">DÜZENLE</a>
+							<div style="text-align:center">
+								<a class="btn btn-danger btn-round btn-sm" href="/Admin/Blog/PostDelete/@b.BlogPost_Id">SİL</a>
+								<a class="btn btn-primary btn-round btn-sm" href="/Admin/Blog/PostGet/@b.BlogPost_Id">DÜZENLE</a>
+							</div>
 						</div>
 					</div>
 				}
-				<div class="card mb-5">
-					<img class="card-img-top" src="~/template/assets/images/blog/add.png" alt="image">
-					<div class="card-body p-25">
-						<h4 class="card-title mb-4"><a href="/Admin/Blog/PostAdd">Gönderi Oluştur</a></h4>
-						<a class="btn btn-success btn-round btn-sm" href="/Admin/Blog/PostAdd">GÖNDERİ OLUŞTUR</a>
-					</div>
-				</div>
 			</div><!-- blog-carousel -->
 		</div><!-- blog-carousel -->
 	</div>

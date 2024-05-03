@@ -12,6 +12,11 @@ namespace web.Areas.Admin.Controllers
 		[HttpGet]
 		public IActionResult Index()
 		{
+			return View();
+		}
+		[HttpGet]
+		public IActionResult ScheduleCurrent()
+		{
 			DateTime startOfWeek = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek);
 			DateTime endOfWeek = startOfWeek.AddDays(6);
 			var degerler = Context.Schedules.Where(x => x.Time >= startOfWeek && x.Time <= endOfWeek).ToList();
@@ -42,7 +47,7 @@ namespace web.Areas.Admin.Controllers
 		{
 			Context.Schedules.Add(s);
 			Context.SaveChanges();
-			return RedirectToAction("Index", "Schedule");
+			return RedirectToAction("ScheduleAdd", "Schedule");
 		}
 		public IActionResult ScheduleDelete(int id)
 		{

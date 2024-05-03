@@ -273,9 +273,6 @@ namespace data.Migrations
                     b.Property<string>("Article")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PhotoURL")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
@@ -416,9 +413,6 @@ namespace data.Migrations
                     b.Property<DateTime>("BirthDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("City_Id")
-                        .HasColumnType("int");
-
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
@@ -440,8 +434,6 @@ namespace data.Migrations
                     b.HasKey("Parent_Id");
 
                     b.HasIndex("Adress_Id");
-
-                    b.HasIndex("City_Id");
 
                     b.ToTable("Parents");
                 });
@@ -483,14 +475,11 @@ namespace data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Student_Id"));
 
-                    b.Property<int>("Adress_Id")
+                    b.Property<int?>("Adress_Id")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("BirthDay")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("City_Id")
-                        .HasColumnType("int");
 
                     b.Property<int>("Class_Id")
                         .HasColumnType("int");
@@ -519,8 +508,6 @@ namespace data.Migrations
                     b.HasKey("Student_Id");
 
                     b.HasIndex("Adress_Id");
-
-                    b.HasIndex("City_Id");
 
                     b.HasIndex("Class_Id");
 
@@ -553,19 +540,13 @@ namespace data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Teacher_Id"));
 
-                    b.Property<int?>("Adress_Id")
+                    b.Property<int>("Adress_Id")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("BirthDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("City_Id")
-                        .HasColumnType("int");
-
                     b.Property<string>("DetailBio")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("DetailPhotoURL")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
@@ -586,9 +567,6 @@ namespace data.Migrations
                     b.Property<string>("PreBio")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PrePhotoURL")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
@@ -598,8 +576,6 @@ namespace data.Migrations
                     b.HasKey("Teacher_Id");
 
                     b.HasIndex("Adress_Id");
-
-                    b.HasIndex("City_Id");
 
                     b.HasIndex("Lesson_Id");
 
@@ -712,15 +688,7 @@ namespace data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("entity.Concrate.City", "City")
-                        .WithMany("Parents")
-                        .HasForeignKey("City_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Adress");
-
-                    b.Navigation("City");
                 });
 
             modelBuilder.Entity("entity.Concrate.Schedule", b =>
@@ -744,17 +712,9 @@ namespace data.Migrations
 
             modelBuilder.Entity("entity.Concrate.Student", b =>
                 {
-                    b.HasOne("entity.Concrate.Adress", "Adress")
+                    b.HasOne("entity.Concrate.Adress", null)
                         .WithMany("Students")
-                        .HasForeignKey("Adress_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("entity.Concrate.City", "City")
-                        .WithMany("Students")
-                        .HasForeignKey("City_Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("Adress_Id");
 
                     b.HasOne("entity.Concrate.Class", "Class")
                         .WithMany("Students")
@@ -768,10 +728,6 @@ namespace data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Adress");
-
-                    b.Navigation("City");
-
                     b.Navigation("Class");
 
                     b.Navigation("Parent");
@@ -779,13 +735,9 @@ namespace data.Migrations
 
             modelBuilder.Entity("entity.Concrate.Teacher", b =>
                 {
-                    b.HasOne("entity.Concrate.Adress", null)
+                    b.HasOne("entity.Concrate.Adress", "Adress")
                         .WithMany("Teachers")
-                        .HasForeignKey("Adress_Id");
-
-                    b.HasOne("entity.Concrate.City", "City")
-                        .WithMany("Teachers")
-                        .HasForeignKey("City_Id")
+                        .HasForeignKey("Adress_Id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -795,7 +747,7 @@ namespace data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("City");
+                    b.Navigation("Adress");
 
                     b.Navigation("Lesson");
                 });
@@ -817,12 +769,6 @@ namespace data.Migrations
             modelBuilder.Entity("entity.Concrate.City", b =>
                 {
                     b.Navigation("Adresses");
-
-                    b.Navigation("Parents");
-
-                    b.Navigation("Students");
-
-                    b.Navigation("Teachers");
                 });
 
             modelBuilder.Entity("entity.Concrate.Class", b =>

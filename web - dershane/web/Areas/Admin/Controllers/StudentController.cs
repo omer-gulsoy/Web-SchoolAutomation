@@ -19,13 +19,21 @@ namespace web.Areas.Admin.Controllers
 		[HttpGet]
 		public IActionResult StudentAdd()
 		{
-			ViewBag.City = Context.Cities.ToList();
+
+			var parents = Context.Parents.Select(p => new
+			{
+				Parent_Id = p.Parent_Id,
+				NameAndSurname = $"{p.FirstName} {p.LastName} {"|"} {"TC:"} {p.TC}"
+			}).ToList();
+			ViewBag.Parent = new SelectList(parents, "Parent_Id", "NameAndSurname");
+
 			var classes = Context.Classes.Select(c => new
 			{
 				Class_Id = c.Class_Id,
 				NumberAndBranch = $"{c.Number} {c.Branch}"
 			}).ToList();
 			ViewBag.Class = new SelectList(classes, "Class_Id", "NumberAndBranch");
+
 			return View();
 		}
 		[HttpPost]
@@ -44,6 +52,19 @@ namespace web.Areas.Admin.Controllers
 		}
 		public IActionResult StudentGet(int id)
 		{
+			var parents = Context.Parents.Select(p => new
+			{
+				Parent_Id = p.Parent_Id,
+				NameAndSurname = $"{p.FirstName} {p.LastName} {"|"} {"TC:"} {p.TC}"
+			}).ToList();
+			ViewBag.Parent = new SelectList(parents, "Parent_Id", "NameAndSurname");
+
+			var classes = Context.Classes.Select(c => new
+			{
+				Class_Id = c.Class_Id,
+				NumberAndBranch = $"{c.Number} {c.Branch}"
+			}).ToList();
+			ViewBag.Class = new SelectList(classes, "Class_Id", "NumberAndBranch");
 			var getirilecek = Context.Students.Find(id);
 			return View("StudentGet", getirilecek);
 		}
@@ -59,7 +80,6 @@ namespace web.Areas.Admin.Controllers
 			guncellenecek.Email = s.Email;
 			guncellenecek.Status = s.Status;
 			guncellenecek.Class_Id = s.Class_Id;
-			guncellenecek.Adress_Id = s.Adress_Id;
 			guncellenecek.Parent_Id = s.Parent_Id;
 			Context.SaveChanges();
 			return RedirectToAction("Index", "Student");

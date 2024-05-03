@@ -45,11 +45,6 @@ app.UseEndpoints(endpoints =>
 		areaName: "Teacher",
 		pattern: "Teacher/{controller=Home}/{action=Index}/{id?}"
 		);
-	endpoints.MapAreaControllerRoute(
-		name: "Parent",
-		areaName: "Parent",
-		pattern: "Parent/{controller=Home}/{action=Index}/{id?}"
-		);
 	endpoints.MapDefaultControllerRoute();
 });
 

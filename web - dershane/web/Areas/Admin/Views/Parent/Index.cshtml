@@ -15,6 +15,21 @@
 			</div>
 		</div>
 		<div class="row">
+			<div class="col-md-6">
+				<div class="media align-items-center mb-5">
+					<div class="media-body primary-bg">
+						<div class="mt-5 mb-5 text-center d-flex justify-content-center">
+							<p>
+								<a> </a><br />
+								<a> </a><br />
+								<a class="btn btn-success btn-round btn-sm" href="/Admin/Parent/ParentAdd">VELİ EKLE</a>
+								<a> </a><br />
+								<a> </a><br />
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 			@foreach (var item in Model)
 			{
 				<div class="col-md-6">
@@ -38,6 +53,7 @@
 							</div>
 						</div>
 						<div class="media-body">
+							<a href="/Admin/Student/StudentAdd"><i class="fa fa-plus text-success"> ÖĞRENCİ EKLE</i></a><br />
 							<a href="/Admin/Parent/ParentGet/@item.Parent_Id"><i class="fa fa-info text-info"> KİŞİSEL BİLGİLER</i></a><br />
 							<a href="/Admin/Parent/ParentGet/@item.Parent_Id"><i class="fa fa-pencil"> DÜZENLE</i></a><br />
 							<a href="/Admin/Parent/ParentDelete/@item.Parent_Id"><i class="fa fa-trash text-danger"> SİL</i></a>
@@ -45,13 +61,6 @@
 					</div>
 				</div>
 			}
-			<div class="col-md-6">
-				<div class="media align-items-center m-5">
-					<div class="media-body">
-						<h4 class="m-3"><a class="text-success" href="/Admin/Parent/ParentAdd"><i class="fa fa-plus text-success">   Veli Oluştur</i></a></h4>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>

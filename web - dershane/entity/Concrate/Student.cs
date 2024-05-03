@@ -22,15 +22,11 @@ namespace entity.Concrate
         [ForeignKey("Class")]
         public int Class_Id { get; set; }
         public Class? Class { get; set; }
-        [ForeignKey("Adress")]
-        public int Adress_Id { get; set; }
-        public Adress? Adress { get; set; }
+        //[ForeignKey("Adress")]
+        //public int Adress_Id { get; set; }
+        //public Adress? Adress { get; set; }
         [ForeignKey("Parent")]
         public int Parent_Id { get; set; }
         public Parent? Parent { get; set; }
-
-		[ForeignKey("City")]
-		public int City_Id { get; set; }
-		public City? City { get; set; }
 	}
 }

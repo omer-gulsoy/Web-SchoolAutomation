@@ -4,6 +4,29 @@
 	ViewData["Title"] = "Eğitim Kadromuz";
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@await Html.PartialAsync("~/Views/Partials/_TeachersCrumbsPartial.cshtml")
-@await Html.PartialAsync("~/Views/Partials/_TeachersListPartial.cshtml")
-@await Html.PartialAsync("~/Views/Partials/_CtaPartial.cshtml")
+<div class="all-teachers  pt--120 pb--70">
+	<div class="container">
+		<div class="row">
+			@foreach (var t in Model)
+			{
+				<div class="col-lg-4 col-md-6">
+					<div class="card mb-5">
+						<img src="~/template/assets/images/teacher/@t.Teacher_Id" alt="image">
+						<div class="card-body teacher-content p-25">
+							<h4 class="card-title mb-1"><a href="/Teachers/Details/@t.Teacher_Id">@t.FirstName <b>@t.LastName</b></a></h4>
+							@foreach (var item in ViewBag.Lesson)
+							{
+								if (item.Lesson_Id == t.Lesson_Id)
+								{
+									<span class="primary-color d-block mb-4">@item.Name Dersi Öğretmeni</span>
+								}
+							}
+							<p class="card-text">@t.PreBio</p>
+						</div>
+					</div>
+				</div>
+			}
+		</div>
+	</div>
+</div>
+@await Html.PartialAsync("~/Views/Shared/Partials/_CtaPartial.cshtml")

@@ -11,23 +11,24 @@ namespace web.Areas.Admin.Controllers
 		[HttpGet]
 		public IActionResult Index()
 		{
-			ViewBag.Students=Context.Students.ToList();
-			var degerler=Context.Parents.ToList();
+			ViewBag.Students = Context.Students.ToList();
+			var degerler = Context.Parents.ToList();
 			return View(degerler);
 		}
 		[HttpGet]
 		public IActionResult ParentAdd()
 		{
 			ViewBag.City = Context.Cities.ToList();
-			ViewBag.Adresses=Context.Adresses.ToList();
+			ViewBag.Adress = Context.Adresses.ToList();
 			return View();
 		}
 		[HttpPost]
-		public IActionResult ParentAdd(Parent p)
+		public IActionResult ParentAdd(Parent p, Adress a)
 		{
 			Context.Parents.Add(p);
+			Context.Adresses.Add(a);
 			Context.SaveChanges();
-			return RedirectToAction("Index","Parent");
+			return RedirectToAction("Index", "Parent");
 		}
 		public IActionResult ParentDelete(int id)
 		{

@@ -2,11 +2,10 @@
 	ViewData["Title"] = "Hakkımızda";
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@await Html.PartialAsync("~/Views/Partials/_AboutCrumbsPartial.cshtml")
-@await Html.PartialAsync("~/Views/Partials/_AboutPartial.cshtml")
-@await Html.PartialAsync("~/Views/Partials/_TakeTourePartial.cshtml")
+@await Html.PartialAsync("~/Views/Shared/Partials/_AboutPartial.cshtml")
+@await Html.PartialAsync("~/Views/Shared/Partials/_TakeTourePartial.cshtml")
 <div class="mb-5">
-	@await Html.PartialAsync("~/Views/Partials/_CtaPartial.cshtml")
+	@await Html.PartialAsync("~/Views/Shared/Partials/_CtaPartial.cshtml")
 </div>
-@await Html.PartialAsync("~/Views/Partials/_TeacherPartial.cshtml")
+@await Html.PartialAsync("~/Views/Shared/Partials/_TeacherPartial.cshtml")
 

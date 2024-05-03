@@ -1,6 +1,4 @@
-﻿@using entity.Concrate
-@model Parent
-@{
+﻿@{
 	ViewData["Title"] = "Veli Düzenleme";
 	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
@@ -16,53 +14,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="contact-form">
-				<form method="post">
-					<div class="row">
-						@Html.TextBoxFor(model => model.Parent_Id, new { style = "display:none;" })
-						<div class="col-md-6">
-							<h2 class="mb-2">İsim</h2>
-							@Html.TextBoxFor(model => model.FirstName, new { @class = "form-control", maxlength = 50 })
-						</div>
-						<div class="col-md-6">
-							<h2 class="mb-2"> Soyisim</h2>
-							@Html.TextBoxFor(x => x.LastName, new { @class = "form-control", maxlength = 20 })
-						</div>
-						<div class="col-md-6">
-							<h2 class="mb-2"> T.C. Kimlik Numarası</h2>
-							@Html.TextBoxFor(x => x.TC, new { @class = "form-control", maxlength = 11 })
-						</div>
-						<div class="col-md-6">
-							<h2 class="mb-2"> Doğum Tarihi</h2>
-							@Html.TextBoxFor(model => model.BirthDay, "{0:yyyy-MM-dd}", new { @class = "form-control", @type = "date" })
-						</div>
-						<div class="col-md-6">
-							<h2 class="mb-2"> Telefon Numarası</h2>
-							@Html.TextBoxFor(x => x.Phone, new { @class = "form-control", placeholder = "Başında 0 olmadan giriniz.", maxlength = 10 })
-						</div>
-						<div class="col-md-6">
-							<h2 class="mb-2"> E-Posta Adresi</h2>
-							@Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
-						</div>
-						<div class="col-md-6">
-							<h2 class="mb-2"> Adres ID</h2>
-							@Html.TextBoxFor(model => model.Adress_Id, new { @class = "form-control" })
-						</div>
-
-						<div class="col-md-6">
-							<h2 class="mb-2"> Statü</h2>
-							@Html.DropDownList("Status", new SelectList(new List<Object>
-						{
-						new { Value = "true", Text = "Aktif" },
-						new { Value = "false", Text = "Pasif" }
-						}, "Value", "Text"), "Lütfen  statü seçiniz...", new { @class = "form-control" })
-						</div>
-						<div class="col-md-12 mt-5 text-center">
-							<button type="submit" class="btn-primary">DEĞİŞKLİKLERİ KAYDET</button>
-						</div>
-					</div>
-				</form>
-			</div>
+			@await Html.PartialAsync("~/Areas/Admin/Views/Shared/Partials/_ParentFormPartial.cshtml")
 		</div>
 	</div>
 }

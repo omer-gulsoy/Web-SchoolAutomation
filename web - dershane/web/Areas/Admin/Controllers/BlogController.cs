@@ -45,7 +45,6 @@ namespace web.Areas.Admin.Controllers
 			r.Title = s.Title;
 			r.Summary = s.Summary;
 			r.Article = s.Article;
-			r.PhotoURL = s.PhotoURL;
 			r.Status = s.Status;
 			Context.SaveChanges();
 			return RedirectToAction("Index", "Blog");

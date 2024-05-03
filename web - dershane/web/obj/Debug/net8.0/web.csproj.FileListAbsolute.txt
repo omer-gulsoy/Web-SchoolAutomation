@@ -570,5 +570,4 @@ C:\Users\win11\Documents\Projeler\web - dershane\web\bin\Debug\net8.0\data.pdb
 C:\Users\win11\Documents\Projeler\web - dershane\web\bin\Debug\net8.0\dto.pdb
 C:\Users\win11\Documents\Projeler\web - dershane\web\bin\Debug\net8.0\entity.pdb
 C:\Users\win11\Documents\Projeler\web - dershane\web\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\win11\Documents\Projeler\web - dershane\web\obj\Debug\net8.0\scopedcss\Areas\Student\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\win11\Documents\Projeler\web - dershane\web\obj\Debug\net8.0\scopedcss\Areas\Teacher\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\win11\Documents\Projeler\web - dershane\web\obj\Debug\net8.0\scopedcss\Views\Shared\_LayoutHome.cshtml.rz.scp.css

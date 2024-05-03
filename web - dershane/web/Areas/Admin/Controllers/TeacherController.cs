@@ -1,6 +1,8 @@
 ﻿using data.Concrate;
 using entity.Concrate;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace web.Areas.Admin.Controllers
 {
@@ -38,6 +40,14 @@ namespace web.Areas.Admin.Controllers
 		}
 		public IActionResult TeacherGet(int id)
 		{
+			var adresses = Context.Adresses.Select(o => new
+			{
+				Adress_Id = o.Adress_Id,
+				FullAdress = $"{o.Adress_Id}{") "}{o.City.Name}{" | "}{o.Town}{" | "}{o.Neighbourhood}{" Mahallesi | "}{o.Street}{" Sokak | Bina NO:"}{o.NO}{" | Kapı NO:"}{o.Apartment}"
+			}).ToList();
+			ViewBag.Addresses = new SelectList(adresses, "Adress_Id", "FullAdress");
+			ViewBag.City = Context.Cities.ToList();
+			ViewBag.Lessons = Context.Lessons.ToList();
 			var getirilecek = Context.Teachers.Find(id);
 			return View("TeacherGet", getirilecek);
 		}
@@ -51,8 +61,6 @@ namespace web.Areas.Admin.Controllers
 			guncellenecek.BirthDay = t.BirthDay;
 			guncellenecek.Phone = t.Phone;
 			guncellenecek.Email = t.Email;
-			guncellenecek.PrePhotoURL = t.PrePhotoURL;
-			guncellenecek.DetailPhotoURL = t.DetailPhotoURL;
 			guncellenecek.PreBio = t.PreBio;
 			guncellenecek.DetailBio = t.DetailBio;
 			guncellenecek.Status = t.Status;

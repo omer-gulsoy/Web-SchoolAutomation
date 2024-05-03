@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace entity.Concrate
 {
-	public class AppRole:IdentityRole<int>
+	public class AppRole : IdentityRole<int>
 	{
 	}
 }

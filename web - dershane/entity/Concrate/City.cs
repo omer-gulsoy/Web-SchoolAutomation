@@ -12,9 +12,6 @@ namespace entity.Concrate
 		[Key]
 		public int City_Id { get; set; }
 		public string? Name { get; set; }
-		public List<Parent>? Parents { get; set; }
-		public List<Student>? Students { get; set; }
-		public List<Teacher>? Teachers { get; set; }
 		public List<Adress>? Adresses { get; set; }
 	}
 }
