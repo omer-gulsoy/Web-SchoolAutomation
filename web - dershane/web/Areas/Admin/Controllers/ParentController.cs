@@ -1,10 +1,12 @@
 ﻿using data.Concrate;
 using entity.Concrate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace web.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize(Roles = "ADMIN")]
 	public class ParentController : Controller
 	{
 		Context Context = new Context();
@@ -23,7 +25,7 @@ namespace web.Areas.Admin.Controllers
 			return View();
 		}
 		[HttpPost]
-		public IActionResult ParentAdd(Parent p, Adress a)
+		public IActionResult ParentAdd(entity.Concrate.Parent p, Adress a)
 		{
 			Context.Parents.Add(p);
 			Context.Adresses.Add(a);
@@ -42,7 +44,7 @@ namespace web.Areas.Admin.Controllers
 			var getirilecek = Context.Parents.Find(id);
 			return View("ParentGet", getirilecek);
 		}
-		public IActionResult ParentUpdate(Parent p)
+		public IActionResult ParentUpdate(entity.Concrate.Parent p)
 		{
 			var guncellenecek = Context.Parents.Find(p.Parent_Id);
 			guncellenecek.Parent_Id = p.Parent_Id;

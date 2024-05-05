@@ -27,6 +27,7 @@ namespace web.Controllers
 			{
 				AppUser appUser = new AppUser
 				{
+					PhoneNumber = appUserRegisterDto.PhoneNumber,
 					UserName = appUserRegisterDto.UserName,
 					Email = appUserRegisterDto.Email,
 					Name = appUserRegisterDto.Name,

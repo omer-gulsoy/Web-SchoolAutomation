@@ -1,11 +1,13 @@
 ﻿using data.Concrate;
 using entity.Concrate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace web.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize(Roles = "ADMIN")]
 	public class StudentController : Controller
 	{
 		Context Context = new Context();
@@ -37,7 +39,7 @@ namespace web.Areas.Admin.Controllers
 			return View();
 		}
 		[HttpPost]
-		public IActionResult StudentAdd(Student s)
+		public IActionResult StudentAdd(entity.Concrate.Student s)
 		{
 			Context.Students.Add(s);
 			Context.SaveChanges();
@@ -68,7 +70,7 @@ namespace web.Areas.Admin.Controllers
 			var getirilecek = Context.Students.Find(id);
 			return View("StudentGet", getirilecek);
 		}
-		public IActionResult StudentUpdate(Student s)
+		public IActionResult StudentUpdate(entity.Concrate.Student s)
 		{
 			var guncellenecek = Context.Students.Find(s.Student_Id);
 			guncellenecek.Student_Id = s.Student_Id;
@@ -85,4 +87,5 @@ namespace web.Areas.Admin.Controllers
 			return RedirectToAction("Index", "Student");
 		}
 	}
+
 }

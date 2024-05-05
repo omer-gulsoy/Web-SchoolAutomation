@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace web.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize(Roles = "ADMIN")]
 	public class HomeController : Controller
 	{
 		[HttpGet]
@@ -18,6 +19,11 @@ namespace web.Areas.Admin.Controllers
 		}
 		[HttpGet]
 		public IActionResult System()
+		{
+			return View();
+		}
+		[HttpGet]
+		public IActionResult User()
 		{
 			return View();
 		}

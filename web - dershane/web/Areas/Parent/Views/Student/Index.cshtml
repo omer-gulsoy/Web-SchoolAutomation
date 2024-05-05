@@ -1,0 +1,42 @@
+﻿@using entity.Concrate
+@model Student
+@{
+	ViewData["Title"] = "Öğrencim";
+	Layout = "~/Areas/Parent/Views/Shared/_Layout.cshtml";
+}
+<div class="contact-form mt-5">
+	<div class="row">
+		<div class="col-md-6">
+			<h5 class="mb-2">İsim</h5>
+			<h7>@Model.FirstName</h7>
+		</div>
+		<div class="col-md-6">
+			<h5 class="mb-2"> Soyisim</h5>
+			<h7>@Model.LastName</h7>
+		</div>
+		<div class="col-md-6">
+			<h5 class="mb-2"> T.C. Kimlik Numarası</h5>
+			<h7>@Model.TC</h7>
+		</div>
+		<div class="col-md-6">
+			<h5 class="mb-2"> Doğum Tarihi</h5>
+			<h7>@Model.BirthDay</h7>
+		</div>
+		<div class="col-md-6">
+			<h5 class="mb-2"> Telefon Numarası</h5>
+			<h7>@Model.Phone</h7>
+		</div>
+		<div class="col-md-6">
+			<h5 class="mb-2"> E-Posta Adresi</h5>
+			<h7>@Model.Email</h7>
+		</div>
+		<div class="col-md-6">
+			<h5 class="mb-2"> Sınıf</h5>
+			<h7>@Model.Class.Number @Model.Class.Branch</h7>
+		</div>
+		<div class="col-md-6">
+			<h5 class="mb-2"> Veli</h5>
+			<h7>@Model.Parent.FirstName @Model.Parent.LastName</h7>
+		</div>
+	</div>
+</div>

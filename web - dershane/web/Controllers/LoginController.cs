@@ -20,6 +20,11 @@ namespace web.Controllers
 		{
 			return View();
 		}
+		[HttpGet]
+		public IActionResult Uncheck()
+		{
+			return View();
+		}
 		[HttpPost]
 		public async Task<IActionResult> Index(LoginViewModel loginViewModel)
 		{
@@ -27,18 +32,30 @@ namespace web.Controllers
 			if (result.Succeeded)
 			{
 				var user = await _userManager.FindByNameAsync(loginViewModel.UserName);
-				var roles = await _userManager.GetRolesAsync(user);
-				if (roles.Contains("Admin"))
+				var roles = await _userManager.GetRolesAsync(user);	
+				if (roles.Contains("ADMIN"))
 				{
 					return RedirectToAction("Index", "Home", new { area = "Admin" });
 				}
-				else if (roles.Contains("Teacher"))
+				else if (roles.Contains("TEACHER"))
 				{
-					return RedirectToAction("Index", "Home", new { area = "Admin" });
+					return RedirectToAction("Index", "Home", new { area = "Teacher" });
 				}
+				else if (roles.Contains("PARENT"))
+				{
+					return RedirectToAction("Index", "Home", new { area = "Parent" });
+				}
+				else if (roles.Contains("STUDENT"))
+				{
+					return RedirectToAction("Index", "Home", new { area = "Student" });
+				}
+				//else
+				//{
+				//	return RedirectToAction("Index", "Home", new { area = "Student" });
+				//}
 				else
 				{
-					return RedirectToAction("Index", "Home", new { area = "Admin" });
+					return RedirectToAction("Uncheck", "Login");
 				}
 			}
 			return View();

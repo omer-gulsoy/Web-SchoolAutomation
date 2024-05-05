@@ -1,5 +1,6 @@
 ﻿using data.Concrate;
 using entity.Concrate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace web.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize(Roles = "ADMIN")]
 	public class TeacherController : Controller
 	{
 		Context Context = new Context();
@@ -25,7 +27,7 @@ namespace web.Areas.Admin.Controllers
 			return View();
 		}
 		[HttpPost]
-		public IActionResult TeacherAdd(Teacher t)
+		public IActionResult TeacherAdd(entity.Concrate.Teacher t)
 		{
 			Context.Teachers.Add(t);
 			Context.SaveChanges();
@@ -51,7 +53,7 @@ namespace web.Areas.Admin.Controllers
 			var getirilecek = Context.Teachers.Find(id);
 			return View("TeacherGet", getirilecek);
 		}
-		public IActionResult TeacherUpdate(Teacher t)
+		public IActionResult TeacherUpdate(entity.Concrate.Teacher t)
 		{
 			var guncellenecek = Context.Teachers.Find(t.Teacher_Id);
 			guncellenecek.Teacher_Id = t.Teacher_Id;

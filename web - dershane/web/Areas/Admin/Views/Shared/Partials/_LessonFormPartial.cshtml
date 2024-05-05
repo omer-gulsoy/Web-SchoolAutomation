@@ -1,12 +1,11 @@
 ﻿@using entity.Concrate
 @model Lesson
-
 <div class="contact-form mt-5">
 	<form method="post">
 		<div class="row">
 			<div class="col-md-6">
 				<h5 class="mb-2">Ders İsmi</h5>
-				@Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+				@Html.TextBoxFor(x => x.Name, new { @class = "form-control",oninput="isim(this)"})
 			</div>
 			<div class="col-md-6">
 				<h5 class="mb-2">Ders Statüsü</h5>

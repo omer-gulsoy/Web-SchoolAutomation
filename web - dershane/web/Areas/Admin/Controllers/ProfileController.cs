@@ -1,11 +1,13 @@
 ﻿using dto.dtos.AppUserDtos;
 using entity.Concrate;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace web.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize(Roles = "ADMIN")]
 	public class ProfileController : Controller
 	{
 		private readonly UserManager<AppUser> _userManager;

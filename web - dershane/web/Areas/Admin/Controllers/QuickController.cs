@@ -8,7 +8,7 @@ namespace web.Areas.Admin.Controllers
 	[Area("Admin")]
 	public class QuickController : Controller
 	{
-		Context Context = new Context();
+		Context Context=new Context();
 		[HttpGet]
 		public IActionResult StudentAdd()
 		{
@@ -22,7 +22,7 @@ namespace web.Areas.Admin.Controllers
 			return View();
 		}
 		[HttpPost]
-		public IActionResult StudentAdd(Student s)
+		public IActionResult StudentAdd(entity.Concrate.Student s)
 		{
 			Context.Students.Add(s);
 			Context.SaveChanges();
