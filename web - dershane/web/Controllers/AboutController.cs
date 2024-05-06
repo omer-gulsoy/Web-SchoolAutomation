@@ -10,6 +10,7 @@ namespace web.Controllers
 		{
 
 			ViewBag.Teacher = Context.Teachers.Where(x => x.Status == true).ToList();
+			ViewBag.Lesson = Context.Lessons.ToList();
 			return View();
 		}
 	}

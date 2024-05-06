@@ -10,27 +10,32 @@ namespace web.Areas.Parent.Controllers
 	[Authorize(Roles = "PARENT")]
 	public class ScheduleController : Controller
 	{
-		private readonly UserManager<AppUser> userManager;
+		private readonly UserManager<AppUser> _userManager;
 
 		Context Context = new Context();
-		[HttpGet]
-		public IActionResult Index()
+
+		public ScheduleController(UserManager<AppUser> userManager, Context context)
 		{
-			string TCS = TempData["TC"] as string;
-			int TCI = 1;
-			var parent = Context.Parents.FirstOrDefault(s => s.TC == TCI);
-			var student = Context.Students.FirstOrDefault(s => s.Parent_Id == parent.Parent_Id);
-			int sinifId = student.Class_Id;
-			ViewBag.ogrSinif = Context.Classes.Where(s => s.Class_Id == sinifId);
+			_userManager = userManager;
+			Context = context;
+		}
+
+		[HttpGet]
+		public async Task<IActionResult> Index()
+		{
+			var values = await _userManager.FindByNameAsync(User.Identity.Name);
+			string TCS = values.UserName;
+			long TCI = long.Parse(TCS);
+			ViewBag.Parent = Context.Parents.Where(p => p.TC == TCI).ToList();
+
+			ViewBag.Student = Context.Students.ToList();
+			ViewBag.Class = Context.Classes.ToList();
 			ViewBag.Teacher = Context.Teachers.ToList();
 			ViewBag.Lesson = Context.Lessons.ToList();
 
-			var program = Context.Schedules.Where(p => p.Class_Id == sinifId);
-
 			DateTime startOfWeek = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek);
 			DateTime endOfWeek = startOfWeek.AddDays(6);
-
-			var degerler = program.Where(x => x.Time >= startOfWeek && x.Time <= endOfWeek).ToList();
+			var degerler = Context.Schedules.Where(x => x.Time >= startOfWeek && x.Time <= endOfWeek).ToList();
 
 
 			return View(degerler);

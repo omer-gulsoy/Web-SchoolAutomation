@@ -13,11 +13,11 @@
 				@foreach (var b in ViewBag.Blog)
 				{
 					<div class="card mb-5">
-						<img class="card-img-top" src="~/template/assets/images/blog/@b.BlogPost_Id" alt="image">
+						<img class="card-img-top" src="@b.PhotoURL" alt="image">
 						<div class="card-body p-25">
 							<ul class="list-inline primary-color mb-3">
-								<li><i class="fa fa-comments"></i> 3 Comments</li>
-							</ul>
+@* 								<li><i class="fa fa-comments"></i> 3 Comments</li>
+ *@							</ul>
 							<h4 class="card-title mb-4"><a href="blog-details.html">@b.Title</a></h4>
 							<p class="card-text">@b.Summary</p>
 							<a class="btn btn-primary btn-round btn-sm" href="/Blog/Details/@b.BlogPost_Id"> YAZIYA GİT </a>

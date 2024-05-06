@@ -14,9 +14,9 @@ namespace entity.Concrate
         public int Student_Id { get; set; }
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
-        public int TC { get; set; }
+        public long TC { get; set; }
         public DateTime BirthDay { get; set; }
-        public int Phone { get; set; }
+        public long Phone { get; set; }
         public string? Email { get; set; }
         public bool Status { get; set; }
         [ForeignKey("Class")]

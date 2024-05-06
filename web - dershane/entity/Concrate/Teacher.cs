@@ -14,13 +14,14 @@ namespace entity.Concrate
         public int Teacher_Id { get; set; }
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
-        public int TC { get; set; }
+        public long TC { get; set; }
         public DateTime BirthDay { get; set; }
-        public int Phone { get; set; }
+        public long Phone { get; set; }
         public string? Email { get; set; }
         public string? PreBio { get; set; }
         public string? DetailBio { get; set; }
-        public bool Status { get; set; }
+		public string? PhotoURL { get; set; }
+		public bool Status { get; set; }
         [ForeignKey("Lesson")]
         public int Lesson_Id { get; set; }
         public Lesson? Lesson { get; set; }

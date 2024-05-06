@@ -12,8 +12,8 @@
 			@foreach (var t in ViewBag.Teacher)
 			{
 				<div class="card mb-5">
-@* 					<img src="~/template/assets/images/teacher/@t.Teacher_Id.jpg" alt="image">
- *@					<div class="card-body teacher-content p-25">
+					<img src="@t.PhotoURL" alt="image">
+					<div class="card-body teacher-content p-25">
 						<h4 class="card-title mb-4"><a href="/Teachers/Details/@t.Teacher_Id">@t.FirstName <b>@t.LastName</b></a></h4>
 						@foreach (var item in ViewBag.Lesson)
 						{

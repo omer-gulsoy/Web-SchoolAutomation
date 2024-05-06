@@ -37,6 +37,10 @@
 				@Html.TextBoxFor(x => x.DetailBio, new { @class = "form-control" })
 			</div>
 			<div class="col-md-6">
+				<h5 class="mb-2"> URL</h5>
+				@Html.TextBoxFor(x => x.PhotoURL, new { @class = "form-control" })
+			</div>
+			<div class="col-md-6">
 				<h5 class="mb-2"> Alan Dersi</h5>
 				@Html.DropDownListFor(x => x.Lesson_Id, new SelectList(ViewBag.Lessons, "Lesson_Id", "Name"), "Lütfen bir ders seçiniz...", new { @class = "form-control" })
 			</div>

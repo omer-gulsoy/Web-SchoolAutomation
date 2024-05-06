@@ -42,7 +42,7 @@
 				@foreach (var b in Model)
 				{
 					<div class="card mb-5">
-						<img class="card-img-top" src="~/template/assets/images/blog/5.jpg" alt="image">
+						<img class="card-img-top" src="@b.PhotoURL" alt="image">
 						<div class="card-body p-25">
 							<h4 class="card-title mb-4"><a href="/Admin/Blog/PostGet/@b.BlogPost_Id">@b.Title</a></h4>
 							<p class="card-text">@b.Summary</p>

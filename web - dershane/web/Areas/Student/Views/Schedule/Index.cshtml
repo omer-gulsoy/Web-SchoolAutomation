@@ -2,7 +2,7 @@
 @model List<Schedule>
 @{
 	ViewData["Title"] = "Ders Programım";
-	Layout = "~/Areas/Student/Views/_Layout.cshtml";
+	Layout = "~/Areas/Student/Views/Shared/_Layout.cshtml";
 }
 
 <div class="event-area  pt--120 pb--80">
@@ -15,38 +15,45 @@
 				</div>
 			</div>
 		</div>
-		<div class="row mb-5">
-			<h3 class="text-uppercase text-warning">@ViewBag.ogrSinif.Number @ViewBag.ogrSinif.Branch</h3>
-			<div class="blog-carousel owl-carousel card-deck">
-				@foreach (var item in Model)
-				{
-					<div class="card mb-5">
-						<div class="card-body p-25">
-							@foreach (var ogretmen in ViewBag.Teacher)
-							{
-								if (ogretmen.Teacher_Id == item.Teacher_Id)
-								{
-									@foreach (var lesson in ViewBag.Lesson)
+		@foreach (var ogrenci in ViewBag.Ogrenci)
+		{
+			<div class="row mb-5">
+				<h3 class="text-uppercase text-warning">@ogrenci.Class.Number @ogrenci.Class.Branch</h3>
+				<div class="blog-carousel owl-carousel card-deck">
+					@foreach (var item in Model)
+					{
+						@if (ogrenci.Class.Class_Id==item.Class_Id)
+						{
+							<div class="card mb-5">
+								<div class="card-body p-25">
+									@foreach (var ogretmen in ViewBag.Teacher)
 									{
-										if (lesson.Lesson_Id == ogretmen.Lesson_Id)
+										if (ogretmen.Teacher_Id == item.Teacher_Id)
 										{
-											<div class="mb-5">
-												<h4 class="card-title"><a href="#">@lesson.Name</a></h4>
-												<h7 class="card-text"><a href="#">@ogretmen.FirstName <b>@ogretmen.LastName</b></a></h7><br />
-											</div>
+											@foreach (var lesson in ViewBag.Lesson)
+											{
+												if (lesson.Lesson_Id == ogretmen.Lesson_Id)
+												{
+													<div class="mb-5">
+														<h4 class="card-title"><a href="#">@lesson.Name</a></h4>
+														<h7 class="card-text"><a href="#">@ogretmen.FirstName <b>@ogretmen.LastName</b></a></h7><br />
+													</div>
+												}
+											}
 										}
 									}
-								}
-							}
-							<a class="card-text">@item.Time.ToString("dddd HH:mm")</a><br />
-							<a href="#" class="card-text">Düzenle</a><br />
-							<a href="#" class="card-text">Sil</a>
-						</div>
-					</div>
+									<a class="card-text">@item.Time.ToString("dddd HH:mm")</a><br />
+									<a href="#" class="card-text">Düzenle</a><br />
+									<a href="#" class="card-text">Sil</a>
+								</div>
+							</div>
+						}
+					}
+				</div><!-- blog-carousel -->
+			</div>
 
-				}
-			</div><!-- blog-carousel -->
-		</div>
+		}
+
 
 		<!-- blog-carousel -->
 

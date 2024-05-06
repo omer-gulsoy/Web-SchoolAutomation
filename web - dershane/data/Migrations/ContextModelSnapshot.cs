@@ -273,6 +273,9 @@ namespace data.Migrations
                     b.Property<string>("Article")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("PhotoURL")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
@@ -422,14 +425,14 @@ namespace data.Migrations
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Phone")
-                        .HasColumnType("int");
+                    b.Property<long>("Phone")
+                        .HasColumnType("bigint");
 
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
-                    b.Property<int>("TC")
-                        .HasColumnType("int");
+                    b.Property<long>("TC")
+                        .HasColumnType("bigint");
 
                     b.HasKey("Parent_Id");
 
@@ -496,14 +499,14 @@ namespace data.Migrations
                     b.Property<int>("Parent_Id")
                         .HasColumnType("int");
 
-                    b.Property<int>("Phone")
-                        .HasColumnType("int");
+                    b.Property<long>("Phone")
+                        .HasColumnType("bigint");
 
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
-                    b.Property<int>("TC")
-                        .HasColumnType("int");
+                    b.Property<long>("TC")
+                        .HasColumnType("bigint");
 
                     b.HasKey("Student_Id");
 
@@ -561,8 +564,11 @@ namespace data.Migrations
                     b.Property<int>("Lesson_Id")
                         .HasColumnType("int");
 
-                    b.Property<int>("Phone")
-                        .HasColumnType("int");
+                    b.Property<long>("Phone")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("PhotoURL")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PreBio")
                         .HasColumnType("nvarchar(max)");
@@ -570,8 +576,8 @@ namespace data.Migrations
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
-                    b.Property<int>("TC")
-                        .HasColumnType("int");
+                    b.Property<long>("TC")
+                        .HasColumnType("bigint");
 
                     b.HasKey("Teacher_Id");
 

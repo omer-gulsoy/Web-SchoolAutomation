@@ -15,23 +15,33 @@
 				</div>
 			</div>
 		</div>
-		<div class="row mb-5">
-			<h3 class="text-uppercase text-warning">@ViewBag.hoca.FirstName @ViewBag.hoca.LastName</h3>
-			<div class="blog-carousel owl-carousel card-deck">
-				@foreach (var item in Model)
+		@foreach (var ogretmen in ViewBag.Ogretmen)
+		{
+			@foreach (var item in Model)
+			{
+				@if (item.Teacher_Id==ogretmen.Teacher_Id)
 				{
-					<div class="card mb-5">
-						<div class="card-body p-25">
-							<div class="mb-5">
-								<h4 class="card-title"><a href="#">@item.Class.Number @item.Class.Branch</a></h4>
-							</div>
-							<a class="card-text">@item.Time.ToString("dddd HH:mm")</a><br />
-						</div>
+					<div class="row mb-5">
+						<h3 class="text-uppercase text-warning">@ogretmen.FirstName @ogretmen.LastName</h3>
+						<div class="blog-carousel owl-carousel card-deck">
+							@foreach (var a in Model)
+							{
+								<div class="card mb-5">
+									<div class="card-body p-25">
+										<div class="mb-5">
+											<h4 class="card-title"><a href="#">@a.Class.Number @a.Class.Branch</a></h4>
+										</div>
+										<a class="card-text">@a.Time.ToString("dddd HH:mm")</a><br />
+									</div>
+								</div>
+
+							}
+						</div><!-- blog-carousel -->
 					</div>
 
 				}
-			</div><!-- blog-carousel -->
-		</div>
+			}
+		}
 
 		<!-- blog-carousel -->
 

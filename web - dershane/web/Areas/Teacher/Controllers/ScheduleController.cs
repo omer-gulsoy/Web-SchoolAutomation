@@ -1,5 +1,7 @@
 ﻿using data.Concrate;
+using entity.Concrate;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace web.Areas.Teacher.Controllers
@@ -9,20 +11,25 @@ namespace web.Areas.Teacher.Controllers
 	public class ScheduleController : Controller
 	{
 		Context Context = new Context();
-		[HttpGet]
-		public IActionResult Index()
+		private readonly UserManager<AppUser> _userManager;
+
+		public ScheduleController(Context context, UserManager<AppUser> userManager)
 		{
-			string TCS = TempData["teacherTC"] as string;
-			int TCI = int.Parse(TCS);
-			ViewBag.hoca = Context.Teachers.Where(t => t.Teacher_Id == TCI);
+			Context = context;
+			_userManager = userManager;
+		}
 
-
-			var program = Context.Schedules.Where(p => p.Teacher_Id == TCI);
+		[HttpGet]
+		public async Task<IActionResult> Index()
+		{
+			var values = await _userManager.FindByNameAsync(User.Identity.Name);
+			string TCS = values.UserName;
+			long TCI = long.Parse(TCS);
+			ViewBag.Ogretmen = Context.Teachers.Where(s => s.TC == TCI).ToList();
 
 			DateTime startOfWeek = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek);
 			DateTime endOfWeek = startOfWeek.AddDays(6);
-
-			var degerler = program.Where(x => x.Time >= startOfWeek && x.Time <= endOfWeek).ToList();
+			var degerler = Context.Schedules.Where(x => x.Time >= startOfWeek && x.Time <= endOfWeek).ToList();
 
 
 			return View(degerler);
