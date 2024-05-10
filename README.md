@@ -1,5 +1,5 @@
 # Dershane Otomasyonu
-Dershane otomasyonu projem, hayata geçmesi halinde; farklı kullanıcı tiplerinin farklı kolaylıklarla dershane sisteminden
+Dershane otomasyonu projesi, hayata geçmesi halinde; farklı kullanıcı tiplerinin farklı kolaylıklarla dershane sisteminden
 faydalanmasını amaçlayan bu şekilde verimli bir kurum hedefleyen bir platformdur. Bu projenin amacı yöneciti için daha
 kolay bir kurum yönetimi; veli ve öğrenci için daha erişilebilir bir kurum; öğretmen için daha bilgilendirici bir kurum;
 misafir kullanıcı için kurum hakkında bilgilendirici ve erişilebilir bir platform oluşturmaktır.
