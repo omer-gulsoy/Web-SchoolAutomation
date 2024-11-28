@@ -77,7 +77,7 @@ misafir kullanıcı için kurum hakkında bilgilendirici ve erişilebilir bir pl
     görüntülenmesi, öğrencisinin ders programını görüntüleyebilmesi planlanmıştır.
 
     -Öğrenci Modülü: Öğrenci modülünde kurumda bulunan öğrencinin bulunduğu sınıfa ait ders programını 
-    görüntüleyebilmesi ve kurumda bulunan eğitmenler hakkında bilgi alma ve görüntüleme fonksiyonlarına sahiptir.
+    görüntüleyebilmesi, kurumda bulunan eğitmenler hakkında bilgi alma ve görüntüleme fonksiyonlarına sahiptir.
 
     - Yönetici, öğretmen, öğrenci ve veli modüllerinde kullanıcıların kendi profil bilgilerini görüntüleyebilecekleri
     alan yer ortak olarak yer almaktadır. Tüm bu kullanıcı profillerinin alanları net olarak ayrılmış olup sınırları
