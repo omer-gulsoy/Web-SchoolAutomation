@@ -1,5 +1,5 @@
 # English
-## School Automation
+## School Automation Project
 ***School automation project, if implemented; Different types of users can access the school system with different ease.
 It is a platform that aims to create an efficient institution that aims to benefit. The aim of this project is to provide better management
 easy institution management; A more accessible institution for parents and students; a more informative institution for the teacher;
