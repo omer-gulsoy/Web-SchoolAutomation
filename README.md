@@ -23,10 +23,10 @@ It was arranged as.
 - Teacher Module: Teacher module allows teachers in the institution to view their own course schedules,
 It has the function of displaying the information of students and parents registered in the institution system.
 
--Parent Module: In the parent module, the teachers in the institution are displayed, the parent's student
+- Parent Module: In the parent module, the teachers in the institution are displayed, the parent's student
 information is displayed.It is planned to be displayed so that the student can view the course schedule.
 
--Student Module: In the student module, you can view the course schedule of the class of the student in
+- Student Module: In the student module, you can view the course schedule of the class of the student in
 the institution.It has the functions of viewing and obtaining information about the instructors in the institution.
 
 - Users can view their own profile information in administrator, teacher, student and parent modules
@@ -73,10 +73,10 @@ olarak düzenlenmiştir.
 - Öğretmen Modülü: Öğretmen modülü kurumda bulunan öğretmenlerin kendi ders programlarını görüntüleyebilmeleri,
 kurum sisteminde kayıtlı öğrencileri ve velileri bilgileriyle görüntüleyebilme fonksiyonuna sahiptir.
 
--Veli Modülü: Veli modülünde kurumda bulunan öğretmenlerin görüntülenmesi, velinin öğrencisinin bilgilerinin
+- Veli Modülü: Veli modülünde kurumda bulunan öğretmenlerin görüntülenmesi, velinin öğrencisinin bilgilerinin
 görüntülenmesi, öğrencisinin ders programını görüntüleyebilmesi planlanmıştır.
 
--Öğrenci Modülü: Öğrenci modülünde kurumda bulunan öğrencinin bulunduğu sınıfa ait ders programını 
+- Öğrenci Modülü: Öğrenci modülünde kurumda bulunan öğrencinin bulunduğu sınıfa ait ders programını 
 görüntüleyebilmesi, kurumda bulunan eğitmenler hakkında bilgi alma ve görüntüleme fonksiyonlarına sahiptir.
 
 - Yönetici, öğretmen, öğrenci ve veli modüllerinde kullanıcıların kendi profil bilgilerini görüntüleyebilecekleri
